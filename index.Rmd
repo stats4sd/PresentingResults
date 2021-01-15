@@ -1,0 +1,49 @@
+--- 
+title: "Resources on Presenting Results"
+author: "RMS"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a document compiling various resources on how to present results from different types of data, for different audiences and different purposes"
+---
+
+# Introduction
+
+This page is an introduction. I will write some text later
+
+## Contents
+
+[Presenting results as story telling](#story)
+One line summary
+
+[Presenting results as tables and graphs 1](#tablegraph1)
+One line summary
+
+[Presenting results as tables and graphs  2 factorial expts ](#factor)
+One line summary
+
+[Presenting results as tables and graphs  3 Precision](#precision)
+One line summary
+
+[Presenting results as tables and graphs  4 for farmers](#farmers)
+One line summary
+
+[Presenting in papers](#papers)
+One line summary
+
+[Presenting on posters](#posters)
+One line summary
+
+[Adapting to audiences](#audience)
+One line summary
+
+[Presenting as show and tell](#showandtell)
+One line summary
+
+[Reviewing,  critiquing and improving presentation](#review)
+One line summary
