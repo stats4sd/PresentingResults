@@ -41,6 +41,46 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -80,7 +120,7 @@
 
 \title{Resources on Presenting Results}
 \author{RMS}
-\date{2021-01-15}
+\date{2021-01-22}
 
 \begin{document}
 \maketitle
@@ -145,11 +185,19 @@ Sam Alex's guide
 Narrower topic ()
 Sam Can we make it relevant to observational studies as well as expts?
 
+\hypertarget{introduction-1}{%
+\section{Introduction}\label{introduction-1}}
+
+A common task in presenting results is how to show differences in a numeric outcome variable across multiple different explanatory variables. Often this will result from conducting a factorial treatment experiment, for example a randomised complete block design looking at whether yield varies across 5 different varieties of a crop, with 3 different levels of nitrogen fertiliser used.
+
+Particularly with factorial experiment - the design has been arrived at with a purpose in mind already. That purpose should be reflected in the way they are analysed and presented.
+
+When visualising these results we should be thinking of ways to clearly and effectively show the impacts of all of these different factors - not just show produce plots sowing the `best' or the 'worst;
+
 \hypertarget{embed-video-here}{%
 \section{Embed Video Here}\label{embed-video-here}}
 
 (Not this video but just demo-ing functionality)
-\includegraphics{https://youtu.be/lbt4BH9Q82E}
 
 \hypertarget{overall-principles}{%
 \section{Overall principles}\label{overall-principles}}
@@ -157,22 +205,105 @@ Sam Can we make it relevant to observational studies as well as expts?
 \begin{itemize}
 \tightlist
 \item
-  There is never only one right way to present results. But there are ways that are more or less effective at getting over a message.
-\item
-  What is effective depends on
-\item
-  The message or objectives
-\item
-  The design or structure of the data
-\item
-  The actual observed data
-\item
-  The intended audience
-\item
-  Factorial experiment are designed like that for a reason and that should be reflected in the way they are analysed and presented.
+  There is never only one right way to present results. But there are ways that are more or less effective at getting over a message. Trial and error of different plot configurations before committing to one is a really useful process for thinking through and refining the presentation. Don't expect to immediately land on the `best' answer.
 \end{itemize}
 
-The following apply to any response that is measured on experimental units, even if we usually think of a continuous variable typified by `yield'
+What is effective depends on:
+* The message or objectives. The same data can be presented in different ways to highlight different trends.
+* The design or structure of the data. Consider how many different variables you have, and how many response levels are in those variables, and what sort
+* The actual observed data - this will inform scales, transformations and may lead you into presenting results in multiple different plots, or all in a single plot.
+* The intended audience - a plot for publication in a journal is unlikely to be as effective if used in a presentation for a conference. And a technical audience will look for different things, and have different expectations when looking at a plot to a more general audience.
+
+\hypertarget{example-data}{%
+\section{Example Data}\label{example-data}}
+
+The following apply to any response that is measured on experimental units, even if we usually think of a continuous variable typified by `yield'. We are going to use some simulated data in this document to show the process for comparing `yield' across a factorial experiment. The design incorporates two treatment factors - ``Type'' (A, B or C) and ``Inputs'' (0, 100 or 200). There were 20 farmers who all included the 9 treatment combinations. The 20 farmers are split across 3 sites (X, Y and Z) and we may also be interested in assessing the gender of the farmer (Male or Female).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{set.seed}\NormalTok{(}\DecValTok{46}\NormalTok{)}
+
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.3.3     v purrr   0.3.4
+## v tibble  3.0.5     v dplyr   1.0.3
+## v tidyr   1.1.2     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.0
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dt1<-}\KeywordTok{expand.grid}\NormalTok{(}\DataTypeTok{Type=}\KeywordTok{c}\NormalTok{(}\StringTok{"A"}\NormalTok{,}\StringTok{"B"}\NormalTok{,}\StringTok{"C"}\NormalTok{),}\DataTypeTok{Inputs=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{100}\NormalTok{,}\DecValTok{200}\NormalTok{),}\DataTypeTok{Farmer=}\DecValTok{1}\OperatorTok{:}\DecValTok{20}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{full_join}\NormalTok{(}\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{Farmer=}\DecValTok{1}\OperatorTok{:}\DecValTok{20}\NormalTok{,}\DataTypeTok{Gender=}\KeywordTok{sample}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"Male"}\NormalTok{,}\StringTok{"Female"}\NormalTok{),}\DecValTok{20}\NormalTok{,}\DataTypeTok{replace=}\OtherTok{TRUE}\NormalTok{),}\DataTypeTok{Site=}\KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"X"}\NormalTok{,}\DecValTok{8}\NormalTok{),}\KeywordTok{rep}\NormalTok{(}\StringTok{"Y"}\NormalTok{,}\DecValTok{7}\NormalTok{),}\KeywordTok{rep}\NormalTok{(}\StringTok{"Z"}\NormalTok{,}\DecValTok{5}\NormalTok{)),}\DataTypeTok{ranef=}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{20}\NormalTok{,}\DataTypeTok{sd=}\DecValTok{2}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Joining, by = "Farmer"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{## simulations. Ignore Gender.}
+\CommentTok{## Sites different - X high Y low Z middle}
+\CommentTok{## Inputs different - increase with Input}
+\CommentTok{## Type effect - C high with high input and high with X}
+\CommentTok{## B high with low input and high with Y}
+\CommentTok{## A in middle}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\OtherTok{NA}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{11}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"X"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{8}\NormalTok{,}\DecValTok{18}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Y"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "A"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "B"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{11}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{0} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{100} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-}\KeywordTok{ifelse}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Site}\OperatorTok{==}\StringTok{"Z"} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs}\OperatorTok{==}\DecValTok{200} \OperatorTok{&}\StringTok{ }\NormalTok{dt1}\OperatorTok{$}\NormalTok{Type }\OperatorTok{==}\StringTok{ "C"}\NormalTok{, }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{2}\NormalTok{),dt1}\OperatorTok{$}\NormalTok{Yield)}
+
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Yield<-dt1}\OperatorTok{$}\NormalTok{Yield}\OperatorTok{+}\KeywordTok{rnorm}\NormalTok{(}\KeywordTok{nrow}\NormalTok{(dt1),}\DataTypeTok{mean=}\NormalTok{dt1}\OperatorTok{$}\NormalTok{ranef,}\DataTypeTok{sd=}\FloatTok{0.1}\NormalTok{)}
+\NormalTok{dt1}\OperatorTok{$}\NormalTok{Inputs<-}\KeywordTok{factor}\NormalTok{(dt1}\OperatorTok{$}\NormalTok{Inputs)}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{key-ideas}{%
 \section{Key ideas}\label{key-ideas}}
@@ -181,28 +312,298 @@ The following apply to any response that is measured on experimental units, even
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Response to stimulus or input is observed at discrete treatment levels
+  Response to stimulus or input is observed at discrete treatment levels. In the example dataset we have created the `response' is yield and the main treatment levels we are considering are the combinations of `type' and `inputs'. We have 9 combinations in total, three levels of type and three levels of inputs, and 20 observations of each combination coming from the 20 farms. Therefore we have 9 mean yield values, and 9 distributions of yield, that we need to compare to be able to assess the results.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dt1 }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(Type,Inputs) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{summarise}\NormalTok{(}\StringTok{"n"}\NormalTok{=}\KeywordTok{n}\NormalTok{(),}\StringTok{"Mean Yield"}\NormalTok{=}\KeywordTok{round}\NormalTok{(}\KeywordTok{mean}\NormalTok{(Yield),}\DecValTok{1}\NormalTok{),}\StringTok{"SD Yield"}\NormalTok{=}\KeywordTok{round}\NormalTok{(}\KeywordTok{sd}\NormalTok{(Yield),}\DecValTok{1}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `summarise()` has grouped output by 'Type'. You can override using the `.groups` argument.
+\end{verbatim}
+
+\begin{verbatim}
+## # A tibble: 9 x 5
+## # Groups:   Type [3]
+##   Type  Inputs     n `Mean Yield` `SD Yield`
+##   <fct> <fct>  <int>        <dbl>      <dbl>
+## 1 A     0         20          8.6        3.3
+## 2 A     100       20         10.6        3.6
+## 3 A     200       20         11.2        5.1
+## 4 B     0         20          7.7        3  
+## 5 B     100       20         10.3        3.3
+## 6 B     200       20         10.6        2.7
+## 7 C     0         20          8.8        3.8
+## 8 C     100       20         10.4        4.5
+## 9 C     200       20         13.9        5.2
+\end{verbatim}
+
+Simply looking at the numbers in a table, or conducting the standard analysis of variance, is not going to tell us as much as a well thought through visualisation. However the ANOVA results here do help to inform us that there are statistically significant effects of type, inputs and the interaction between the type and inputs within this trial.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(lmerTest)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: lme4
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: Matrix
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'Matrix'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:tidyr':
+## 
+##     expand, pack, unpack
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'lmerTest'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:lme4':
+## 
+##     lmer
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:stats':
+## 
+##     step
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{lmer}\NormalTok{(Yield}\OperatorTok{~}\NormalTok{Type}\OperatorTok{*}\NormalTok{Inputs}\OperatorTok{+}\NormalTok{(}\DecValTok{1}\OperatorTok{|}\NormalTok{Farmer),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{anova}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Type III Analysis of Variance Table with Satterthwaite's method
+##             Sum Sq Mean Sq NumDF DenDF F value    Pr(>F)    
+## Type         71.00   35.50     2   152  5.0294  0.007674 ** 
+## Inputs      374.25  187.12     2   152 26.5108 1.328e-10 ***
+## Type:Inputs  70.92   17.73     4   152  2.5119  0.044062 *  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
 \item
   Conventional plot: input or stimulus F = horizontal , response y = vertical
-  \includegraphics{img/Picture1.jpg}
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Type,}\DataTypeTok{group=}\DecValTok{1}\NormalTok{),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{colour=}\StringTok{"red"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Inputs,}\DataTypeTok{group=}\DecValTok{1}\NormalTok{),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{colour=}\StringTok{"red"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
 \item
   Interaction: modification of, or non-parallel, response curves
-  \includegraphics{img/Picture2.png}
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Inputs,}\DataTypeTok{group=}\NormalTok{Type,}\DataTypeTok{colour=}\NormalTok{Type),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
 \item
   More than two factors (F, A, B,\ldots): same applies but more choices now and higher order interactions hard to interpret. Two choices:
 \item
   A, B, \ldots{} of equal status or interest: one line for each combination of A and B.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Inputs,}\DataTypeTok{group=}\KeywordTok{interaction}\NormalTok{(Type,Site),}\DataTypeTok{colour=}\KeywordTok{interaction}\NormalTok{(Type,Site)),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-8-1.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
 \item
   Primary focus on FxA, with B\ldots{} modifiers or varying context: use B,\ldots{} as facets so that the FxA pattern can be compared.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Inputs,}\DataTypeTok{group=}\NormalTok{Type,}\DataTypeTok{colour=}\NormalTok{Type),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{Site)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
 \item
   The FxA interaction and presentation is identical information content as the AxF interaction and presentation. But the message that it is easy to read from the two is not the same. Hence (a) for a specific objective or story, one will be more effective than another, (b) there may not be only one way to present, (c) with \textgreater2 factors the possibilities increase rapidly
-  \includegraphics{img/Picture3.jpg}
-\item
-  In practice, the observations on the graph come with uncertainty in their position. Part of the function of statistical analysis is to estimate the uncertainty so that (a) it can also be represented on the graph (b) we can separate pattern that is noise (possibly just due to random, unrepeatable variation) from that which is signal (repeatable, consistent across repetitions).
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Site,}\DataTypeTok{group=}\NormalTok{Type,}\DataTypeTok{colour=}\NormalTok{Type),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-10-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Type,}\DataTypeTok{group=}\NormalTok{Site,}\DataTypeTok{colour=}\NormalTok{Site),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+\includegraphics{img/Picture3.jpg}
+8. In practice, the observations on the graph come with uncertainty in their position. Part of the function of statistical analysis is to estimate the uncertainty so that (a) it can also be represented on the graph (b) we can separate pattern that is noise (possibly just due to random, unrepeatable variation) from that which is signal (repeatable, consistent across repetitions).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Type,}\DataTypeTok{group=}\NormalTok{Site,}\DataTypeTok{colour=}\NormalTok{Site),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{)}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{fun.data=}\NormalTok{mean_cl_normal)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
 \item
   If the effect of one or more factors is considered noise then we can average over them and display main effects (\ldots{} hard to explain this concisely. Its not just main effects but eg FxA in an experiment with F, A and B\ldots)
-  \includegraphics{img/Picture4.jpg}
 \end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{y=}\NormalTok{Yield,}\DataTypeTok{x=}\NormalTok{Inputs),}\DataTypeTok{data=}\NormalTok{dt1) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"line"}\NormalTok{,}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{group=}\DecValTok{1}\NormalTok{))}\OperatorTok{+}
+\StringTok{    }\KeywordTok{stat_summary}\NormalTok{(}\DataTypeTok{geom=}\StringTok{"point"}\NormalTok{,}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{group=}\NormalTok{Gender,}\DataTypeTok{col=}\NormalTok{Gender),}\DataTypeTok{size=}\DecValTok{4}\NormalTok{)}\OperatorTok{+}
+\StringTok{      }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Mean Yield"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## No summary function supplied, defaulting to `mean_se()`
+## No summary function supplied, defaulting to `mean_se()`
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-13-1.pdf}
 
 \hypertarget{fun-shiny-test}{%
 \section{Fun shiny test}\label{fun-shiny-test}}
@@ -359,7 +760,643 @@ Ric
 \hypertarget{posters}{%
 \chapter{Presenting on posters}\label{posters}}
 
-Alex T
+\emph{Alex Thomson}
+
+\hypertarget{video}{%
+\section{Video}\label{video}}
+
+\hypertarget{the-aim-of-posters}{%
+\section{The aim of posters}\label{the-aim-of-posters}}
+
+Academic research posters are a great way to engage with your scientific community by succinctly distilling your research onto a large display, crowded by your peers doing just the same.
+
+These could be shown off in many different settings.
+
+\begin{itemize}
+\tightlist
+\item
+  Large scientific (inter-disciplinary) conferences
+\item
+  Smaller conferences devoted mostly to your field
+\item
+  Social media channels such as Twitter
+\item
+  Small online meetings with fixed presentation schedules
+\item
+  Blogs
+\item
+  Other online settings such as Miro
+\end{itemize}
+
+Regardless of the setting, the sharing of research posters is designed to be a learning experience for both the presenter and the audience.
+
+\textbf{\emph{For the presenter}},
+
+\begin{itemize}
+\tightlist
+\item
+  Share their research with the wider academic community
+\item
+  Engage directly with their colleagues
+\item
+  Receive feedback from their peers
+\item
+  Develop their presentation and communication skills
+\item
+  Networking opportunities
+\end{itemize}
+
+\textbf{\emph{For the audience}},
+
+\begin{itemize}
+\tightlist
+\item
+  Learn about the research currently happening within their community
+\item
+  Engage directly with their colleagues
+\item
+  Potentially gain insights which could aid in their own research
+\item
+  Networking opportunities
+\end{itemize}
+
+\hypertarget{key-principles}{%
+\section{Key principles}\label{key-principles}}
+
+\hypertarget{the-importance-of-design-and-layout}{%
+\subsection{The importance of design and layout}\label{the-importance-of-design-and-layout}}
+
+Crucial to ensuring the effectiveness of your poster and making sure you are calable of attracting an audience for your poster.
+
+For a virtual conference, you may not have to fight for an audience but you still will need to keep their attention and keep them interested.
+
+An inaccessible or poor design can be very off putting.
+
+\begin{itemize}
+\tightlist
+\item
+  Put your sections into a logical flow so the audience knows where to read
+\item
+  Avoid the dreaded ``Wall of text''
+\item
+  Avoid clutter, keep it tidy
+\item
+  Avoid using images as a background
+\item
+  Keep your colours and text consistent
+\end{itemize}
+
+Always think carefully about what might be expected by your audience and what might keep them entertained.
+
+If possible, always reach out for feedback on a draft before creating a final poster.Friends, family, colleagues, supervisors, anyone.
+
+There are a couple base design types that have become common over the years.
+
+\textbf{\emph{Traditional Design}}
+
+\begin{figure}
+\centering
+\includegraphics{img/Map.png}
+\caption{Traditional Poster Example Auother: Alex Thomson (PLACEHOLDER!!!!)}
+\end{figure}
+
+Each section within individual text boxes arranged into 2/3 columns oriented portrait or landscape.
+
+This traditional design dominates most poster conferences and will likely be the most common format for any template posters you find online.
+
+\textbf{Strengths}
+
+\begin{itemize}
+\tightlist
+\item
+  Useful for audiences requiring lots of detail
+\item
+  Requires little application of creative/graphic design
+\item
+  Easy to read and follow the order
+\item
+  The basis for most templates
+\end{itemize}
+
+\textbf{Weaknesses}
+
+\begin{itemize}
+\tightlist
+\item
+  Can appear lazy simply because of how common this format is
+\item
+  Often encourages the ``Wall of text''
+\item
+  Requires creativity in order to make this stand out
+\item
+  Gaining attention relies more heavily on the title and imagery
+\item
+  Common for people to just copy and paste from report into a template when using this design
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{img/Traditional Poster design template.png}
+\caption{Traditional Poster Design template}
+\end{figure}
+
+\textbf{\emph{\#betterposter design}}
+
+Suggested by American PhD student Mike Morrison in a series of videos critical of the traditional approach and design to posters.
+
+This has become a larger campaign being take up in real world applications and with plans in the works to conduct full studies into its efficacy.
+
+The approach takes a user experience approach to poster design to increase the size of a potential audience, imporve readability and more memorable.
+
+This is done by putting overwhelming emphasis on the key findings and results with these taking up the majority of the space on the page.
+
+This is put in the center in plain language, supplemented by imagery, with information bars either side.
+
+The left panel (\emph{silent presenter}) bullet points much of the normal information you would expect to find.
+
+While the right panel (\emph{ammo bar}) is filed with additional information that find the study particularly interesting and largely used when the presenter is answering questions.
+
+\begin{figure}
+\centering
+\includegraphics{img/better poster example 1.png}
+\caption{\#betterposter Example Author: Alex Thomson}
+\end{figure}
+
+\textbf{Strengths}
+
+\begin{itemize}
+\tightlist
+\item
+  Avoids overloading the reader with information.
+\item
+  Strongly limits the word count.
+\item
+  Simple design to work with.
+\item
+  QR codes can be included to link to copies of the poster, the study and contact details.
+\item
+  Attracts the audience in with a key interesting statement.
+\item
+  Tends to be written in more plain language than other posters, ignoring scientific jargon.
+\item
+  More approachable to a wider variety of people.
+\item
+  Less information means more likely to be remembered by the audience.
+\end{itemize}
+
+\textbf{Weaknesses}
+
+\begin{itemize}
+\tightlist
+\item
+  Mostly designed for in-person conferences.
+\item
+  QR code being included assumes there are additional resources to link to. Not always the case.
+\item
+  To a more critical audience, may appear simple and reductive.
+\item
+  Still a new approach so may be a off-utting to some stuck in traditional ways
+\item
+  Assumes you have a key finding to present.
+\item
+  May not be as appropriate for posters not designed for studies or those which prioritise methods
+\item
+  ``Ammo bar'' assumes presence of a knowledgeable presenter
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{img/Better Poster template.png}
+\caption{\#betterposter template}
+\end{figure}
+
+\textbf{\emph{Infographics}}
+
+Infographics are posters designed to provide lots of information and facts to the audience. Or alternatively to visually display some kind of theory/principle in an interesting way.
+
+Usually requires high levels of creative design over graphics and images. Usually with the help of a graphic designer.
+
+Can help in generating discussion of a complex subject.
+
+Could be useful in providing context of an upcoming study, generating an argument for the importance of an upcoming study or reporting the initial descriptive results from a large survey.
+
+Assumes generally you have lots and lots of interesting numbers, results and facts to tell the audience. Or a theory which is easy to show off visually.
+
+Can be off-putting to supply the audience with so much information at once.
+
+\begin{center}\includegraphics[width=20.83in]{img/infographic} \end{center}
+
+\href{https://visual.ly/community/Infographics/technology/infographics-benefits-their-use-online?utm_source=visually_embed}{Source of infographic: Visual.ly}
+
+\textbf{\emph{Be creative}}
+
+Your options are not limited to these ideas. Always be thinking about how you could \textbf{\emph{be creative}}
+
+Your choices can be expanded or constrained by the setting and rules of your poster session.
+
+\emph{Consider the follwing questions and ideas}
+
+\begin{itemize}
+\tightlist
+\item
+  Are you allowed interactive elements?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Screens? Could include video
+  \item
+    Handouts?
+  \item
+    Physical models?
+  \end{itemize}
+\item
+  Are they displayed on screens or paper?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    on screens could be turned into an animated presentation
+  \end{itemize}
+\item
+  Is it a virtual conference?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Do you have a scheduled presentation slot?
+  \item
+    If so, engagement more reliant on your presentation skills and content over design
+  \item
+    Is it on twitter?
+  \item
+    Think about how you can use the medium to your advantage
+  \item
+    Promote yourself and your poster
+  \item
+    Could animate your poster as a GIF
+  \item
+    Use the text to include additional contextual information not on the poster
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{keep-it-short-and-simple}{%
+\subsection{Keep it short and simple}\label{keep-it-short-and-simple}}
+
+Avoid the temptation to summarise every little thing about your study. You should be thinking about your poster as a \textbf{visual abstract}. Something to advertise your research and your skills.
+
+\begin{itemize}
+\tightlist
+\item
+  Focus on just \textbf{one or two key messages} about your study
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This could be key findings or interesting innovations/applications of your methodology
+  \end{itemize}
+\item
+  Prioritise including information that the audience \textbf{needs} to know first
+\item
+  Only include information on the poster that is relevant to these key messages
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You may have the chance to highlight other parts of your study when asked questions by audience members
+  \end{itemize}
+\end{itemize}
+
+\begin{quote}
+``It seems that perfection is attained not when there is nothing more to add, but when there is nothing more to remove'' Antoine de Saint Exupery \footnote{Quoted originally in the \#betterposter videos}
+\end{quote}
+
+Use this quote as a guiding rule. Always ask yourself what is \emph{needed}, \emph{relevant}, and \emph{engaging}.
+
+There is no set rule when it comes to a word count although the rules of your session/conference may dictate one which you should follow.
+
+\begin{itemize}
+\tightlist
+\item
+  Some resources will say keep it under 1,000 words \footnote{Colin Purrington blog, see link above}
+\item
+  Others around 300 - 800 \footnote{NYU guide, see link above}
+\item
+  One guide even suggests restricting yourself down to just 250 \footnote{LSE guide, see link above}
+\end{itemize}
+
+The best advice that can be given here is to consider how much you are comfortable saying and how much it is you have to say, as well as think about what might the audience be expecting.
+
+The following sections are the standard parts to include for a research poster although what you need to include may depend on your purpose and how far along in your study you are.
+
+\textbf{\emph{Introduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  Make this something quick to \textbf{grab the readers attention}
+\item
+  Let them know \emph{why} they should keep reading
+\item
+  Get across the point and relevance of your study
+\item
+  Perhaps draw them in with a hypothesis/research question
+\end{itemize}
+
+\textbf{\emph{Methods/Approach}}
+
+\begin{itemize}
+\tightlist
+\item
+  To some this may actually be the most interesting part, especially if your method is quite innovative
+
+  \begin{itemize}
+  \tightlist
+  \item
+    if so, be sure to give this section great attention so you can explain why your method is special
+  \end{itemize}
+\item
+  Otherwise, keep this section brief to focus on your findings and interpretations
+\item
+  Where possible, display your approach through a diagram or pictures.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Especially if the study was an experimental design or a trial
+  \end{itemize}
+\end{itemize}
+
+\textbf{\emph{Results}}
+
+\begin{itemize}
+\tightlist
+\item
+  This will likely take up more space on the poster than any other section
+\item
+  Only include the most interesting and relevant findings
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Don't include anything that doesn't \textbf{need} to be there
+  \end{itemize}
+\item
+  Unless your study was using qualitative data analysis, this section will likely include only short sentences
+\item
+  Use graphs, maps, and tables which help to illustrate the key findings and messages
+\end{itemize}
+
+\textbf{\emph{Discussion/Conclusion}}
+
+\begin{itemize}
+\tightlist
+\item
+  Some will choose to separate these two into different sections
+\item
+  Focus only on interpreting your most relevant and interesting results
+\item
+  Try to explain what your findings mean in plain language.
+\item
+  The audience will want to know \emph{why} your results are important and interesting
+\end{itemize}
+
+\textbf{\emph{References}}
+
+\begin{itemize}
+\tightlist
+\item
+  Always to be included if you reference any material on your poster
+\item
+  Keep this small and to the bottom of the page
+\end{itemize}
+
+\textbf{\emph{Acknowledgements}}
+
+\begin{itemize}
+\tightlist
+\item
+  Acknowledge your institution, employer, tutors and any colleagues who aided you.
+\item
+  Good to provide contact details to keep up engagement after the session
+\end{itemize}
+
+\hypertarget{make-it-engaging}{%
+\subsection{Make it engaging}\label{make-it-engaging}}
+
+If your poster is displayed at a conference, in person or online, you may be fighting for attention with hundreds of other posters within a limited time frame.
+
+You must attract and engaging.
+
+Think about your poster as an advert for your research. What can you include to draw in potential ``customers''?, how can you make them remember you?
+
+This will come down to both your presentation and design of your poster as well as the interactions you have with your audience.
+
+\textbf{\emph{Tips to engage with your presentation}}
+
+\begin{itemize}
+\tightlist
+\item
+  Grab them with your title. Consider making the title a statement of your key finding
+\item
+  Use imagery
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Photos
+  \item
+    Graphs
+  \item
+    Diagrams
+  \item
+    Maps
+  \end{itemize}
+\item
+  Don't use too many graphs
+\item
+  Don't use overly-complicated hard to read graphs
+\item
+  Avoid tables where possible
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Keep them simple if they are used
+  \end{itemize}
+\item
+  Avoid complicated inaccessible language
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Broad plain language will be understood by a larger audience
+  \end{itemize}
+\item
+  Use colour effectively
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Don't use too many different colours. Pick a couple to design a colour palette/scheme
+  \item
+    Avoid overly saturated colours
+  \end{itemize}
+\item
+  Be creative with your medium
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Can you use interactive screens?
+  \item
+    Using twitter? Could animate your presentation as a GIF
+  \end{itemize}
+\end{itemize}
+
+Also think about the information that you include on your poster.
+
+\textbf{\emph{What information is going to trigger interesting conversations with your audience?}}
+
+\begin{itemize}
+\tightlist
+\item
+  Hypotheses
+\item
+  Research Questions
+\item
+  Surprising results
+\item
+  Important recommendations
+\item
+  New theories/models?
+\item
+  Ask the audience questions to make them think
+\end{itemize}
+
+\textbf{\emph{Tips to engage with your interactions}}
+
+\begin{itemize}
+\tightlist
+\item
+  Be prepared in advance to answer any and all questions
+\item
+  Include your contact details prominently on your poster
+\item
+  Consider printing out smaller hand out versions of your poster
+\item
+  Details on where to find the paper and poster online
+\item
+  Keep notes with additional notes at hand that you can refer to
+\item
+  Advertise your poster beforehand using social media
+\end{itemize}
+
+\hypertarget{some-examples}{%
+\subsection{Some examples}\label{some-examples}}
+
+\begin{figure}
+\centering
+\includegraphics{img/YISA Poster 2020.png}
+\caption{Example 1: Our compeition winning twitter poster Authors: Alex Thomson and Emily Nevitt}
+\end{figure}
+
+This poster keeps the word count short to less than 300 words, down from a dissertation over 19,000 words, and picks out just two key descriptive findings
+
+Maps and an interesting graph dominate the page to draw in the audience.
+
+\begin{figure}
+\centering
+\includegraphics{img/CCRP poster 1.png}
+\caption{Example 2: RMS Poster Author: Ric Coe}
+\end{figure}
+
+A large interesting diagram draws the eye
+
+Shows that research and studies is not the only reason to make a poster as this is designed to illustrate key principles, examples and practices.
+
+\begin{center}\includegraphics[width=9.56in]{img/GIS East Africa Poster} \end{center}
+
+Example 3: CCRP Poster - GIS East Africa Authors: Were K, Macharia PN, Nyamai M, Tanui LK, Okech P, Ngigi MM, Ngigi TG, Onchaga R, Matara S, Odhiambo S and Lali F
+
+Again it is kept short and simple with many photos, maps and diagrams used to succinctly illustrate the key messages.
+
+\begin{figure}
+\centering
+\includegraphics{img/Pigeon Pea FRN.png}
+\caption{Example 4: CCRP Poster - Pigeon Pea FRN Authors: Ng'ang'a J, Layatuu E and Keya A}
+\end{figure}
+
+A smart use of the traditional design keeping the word count fairly low and choosing plenty of imagery to illustrate the results and methodology.
+
+\begin{figure}
+\centering
+\includegraphics{img/Sorghum Kenya.png}
+\caption{Example 5: CCRP Poster - Sorghum Kenya Authors: F. Wamunga, A. Were, E.J Too, B.O Nyongesa, F.Odiwuor, E. Ouma, S. Gudu}
+\end{figure}
+
+Makes use of the traditional design also with good use of imagery and space, very informative and includes all relevant sections. Arguably may include too much text however.
+
+\hypertarget{other-resources}{%
+\subsection{Other resources}\label{other-resources}}
+
+\emph{Colin Purrington Blog filled with plenty of tips, dos and dont's and templates}
+
+\href{https://colinpurrington.com/tips/poster-design/}{Blog}
+
+\href{https://colinpurrington.com/2019/06/templates-for-better-posters/}{Templates}
+
+\emph{Some helpful guides provided by universities}
+
+\href{https://guides.nyu.edu/posters}{New York University}
+
+\href{https://www.reading.ac.uk/web/files/dps/Conference_poster_PPT_examples.pdf}{University of Reading}
+
+\href{https://blogs.lse.ac.uk/impactofsocialsciences/2018/05/11/how-to-design-an-award-winning-conference-poster/}{London School of Economics}
+
+\href{http://www.supi.manchester.ac.uk/forteachers/academicposterguidance/}{University of Manchester}
+
+\href{https://urc.ucdavis.edu/creating-effective-academic-posters}{UC Davis}
+
+\emph{\#betterposter campaign}
+
+\href{https://www.youtube.com/watch?v=1RwJbhkCA58\&t=2s\&ab_channel=MikeMorrison}{Video 1}
+
+\href{https://www.youtube.com/watch?v=SYk29tnxASs\&ab_channel=MikeMorrison}{Video 2}
+
+\href{https://www.youtube.com/watch?v=fQDL8r3r_d4\&ab_channel=MikeMorrison}{Video 3: Twitter Posters}
+
+\href{https://www.insidehighered.com/news/2019/06/24/theres-movement-better-scientific-posters-are-they-really-better}{Response Article}
+
+\emph{Whole website devoted to academic research posters}
+
+\href{https://www.academicposter.org/}{Acedemicposter.org}
+
+\href{https://www.posterpresentations.com/index.html}{PosterPresentations.com}
+
+\emph{Academic Papers}
+
+\href{https://febs.onlinelibrary.wiley.com/doi/epdf/10.1111/febs.13383}{Rowe and llic: Rethinking poster presentations at large-scale scientiﬁcmeetings -- is it time for the format to evolve?}
+
+\href{https://www.sciencedirect.com/science/article/pii/S2049080116301303}{Gundogan et al: How to make and academic poster}
+
+\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1955747/}{Miller Preparing and Presenting Effective Research Posters}
+
+\textbf{\emph{Examples}}
+
+\emph{Pintrest boards}
+
+\href{https://www.pinterest.co.uk/jing4717/academic-poster/}{Board 1}
+
+\href{https://www.pinterest.at/tzesire/conference-posters-design/}{Board 2}
+
+\emph{Other}
+
+\href{https://ur.umbc.edu/poster-presentation-examples/}{UMBC collection of inter-disciplinary examples}
+
+\emph{Template collections}
+
+\href{https://templatelab.com/research-posters/}{Template Lab}
 
 \hypertarget{audience}{%
 \chapter{Adapting to audiences}\label{audience}}

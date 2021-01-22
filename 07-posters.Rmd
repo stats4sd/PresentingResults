@@ -1,3 +1,378 @@
 # Presenting on posters {#posters}
 
-Alex T
+*Alex Thomson*
+
+
+## Video
+
+```{r,echo=FALSE,out.width="100%"}
+knitr::include_url("https://www.youtube.com/embed/lbt4BH9Q82E")
+```
+
+## The aim of posters
+
+Academic research posters are a great way to engage with your scientific community by succinctly distilling your research onto a large display, crowded by your peers doing just the same.
+
+These could be shown off in many different settings.
+
+* Large scientific (inter-disciplinary) conferences
+* Smaller conferences devoted mostly to your field
+* Social media channels such as Twitter
+* Small online meetings with fixed presentation schedules
+* Blogs
+* Other online settings such as Miro
+
+Regardless of the setting, the sharing of research posters is designed to be a learning experience for both the presenter and the audience.
+
+***For the presenter***,
+
+* Share their research with the wider academic community
+* Engage directly with their colleagues
+* Receive feedback from their peers
+* Develop their presentation and communication skills
+* Networking opportunities
+
+***For the audience***,
+
+* Learn about the research currently happening within their community
+* Engage directly with their colleagues
+* Potentially gain insights which could aid in their own research
+* Networking opportunities
+
+## Key principles
+
+### The importance of design and layout
+
+Crucial to ensuring the effectiveness of your poster and making sure you are calable of attracting an audience for your poster.
+
+For a virtual conference, you may not have to fight for an audience but you still will need to keep their attention and keep them interested.
+
+An inaccessible or poor design can be very off putting.
+
+* Put your sections into a logical flow so the audience knows where to read
+* Avoid the dreaded "Wall of text"
+* Avoid clutter, keep it tidy
+* Avoid using images as a background
+* Keep your colours and text consistent
+
+Always think carefully about what might be expected by your audience and what might keep them entertained.
+
+If possible, always reach out for feedback on a draft before creating a final poster.Friends, family, colleagues, supervisors, anyone. 
+
+There are a couple base design types that have become common over the years.
+
+***Traditional Design***
+
+![Traditional Poster Example Auother: Alex Thomson (PLACEHOLDER!!!!)](img/Map.png)
+
+Each section within individual text boxes arranged into 2/3 columns oriented portrait or landscape.
+
+This traditional design dominates most poster conferences and will likely be the most common format for any template posters you find online.
+
+**Strengths**
+
+* Useful for audiences requiring lots of detail
+* Requires little application of creative/graphic design
+* Easy to read and follow the order
+* The basis for most templates
+
+**Weaknesses**
+
+* Can appear lazy simply because of how common this format is
+* Often encourages the "Wall of text"
+* Requires creativity in order to make this stand out
+* Gaining attention relies more heavily on the title and imagery
+* Common for people to just copy and paste from report into a template when using this design
+
+![Traditional Poster Design template](img/Traditional Poster design template.png)
+
+***#betterposter design***
+
+Suggested by American PhD student Mike Morrison in a series of videos critical of the traditional approach and design to posters. 
+
+This has become a larger campaign being take up in real world applications and with plans in the works to conduct full studies into its efficacy.
+
+The approach takes a user experience approach to poster design to increase the size of a potential audience, imporve readability and more memorable.
+
+This is done by putting overwhelming emphasis on the key findings and results with these taking up the majority of the space on the page.
+
+This is put in the center in plain language, supplemented by imagery, with information bars either side. 
+
+The left panel (*silent presenter*) bullet points much of the normal information you would expect to find. 
+
+While the right panel (*ammo bar*) is filed with additional information that find the study particularly interesting and largely used when the presenter is answering questions.
+
+![#betterposter Example Author: Alex Thomson](img/better poster example 1.png)
+
+**Strengths**
+
+* Avoids overloading the reader with information.
+* Strongly limits the word count.
+* Simple design to work with.
+* QR codes can be included to link to copies of the poster, the study and contact details.
+* Attracts the audience in with a key interesting statement.
+* Tends to be written in more plain language than other posters, ignoring scientific jargon.
+* More approachable to a wider variety of people.
+* Less information means more likely to be remembered by the audience.
+
+**Weaknesses**
+
+* Mostly designed for in-person conferences.
+* QR code being included assumes there are additional resources to link to. Not always the case.
+* To a more critical audience, may appear simple and reductive.
+* Still a new approach so may be a off-utting to some stuck in traditional ways
+* Assumes you have a key finding to present.
+ + May not be as appropriate for posters not designed for studies or those which prioritise methods
+* "Ammo bar" assumes presence of a knowledgeable presenter
+
+![#betterposter template](img/Better Poster template.png)
+
+***Infographics***
+
+Infographics are posters designed to provide lots of information and facts to the audience. Or alternatively to visually display some kind of theory/principle in an interesting way.
+
+Usually requires high levels of creative design over graphics and images. Usually with the help of a graphic designer.
+
+Can help in generating discussion of a complex subject.
+
+Could be useful in providing context of an upcoming study, generating an argument for the importance of an upcoming study or reporting the initial descriptive results from a large survey. 
+
+Assumes generally you have lots and lots of interesting numbers, results and facts to tell the audience. Or a theory which is easy to show off visually.
+
+Can be off-putting to supply the audience with so much information at once.
+
+```{r, echo = FALSE, fig.align='center', fig.height= 0.5}
+knitr::include_graphics("img/infographic.jpg")
+```
+[Source of infographic: Visual.ly](https://visual.ly/community/Infographics/technology/infographics-benefits-their-use-online?utm_source=visually_embed)
+
+***Be creative***
+
+Your options are not limited to these ideas. Always be thinking about how you could ***be creative***
+
+Your choices can be expanded or constrained by the setting and rules of your poster session.
+
+*Consider the follwing questions and ideas*
+
+* Are you allowed interactive elements?
+  + Screens? Could include video
+  + Handouts?
+  + Physical models?
+* Are they displayed on screens or paper?
+  + on screens could be turned into an animated presentation
+* Is it a virtual conference?
+  + Do you have a scheduled presentation slot?
+  + If so, engagement more reliant on your presentation skills and content over design
+  + Is it on twitter?
+  + Think about how you can use the medium to your advantage
+  + Promote yourself and your poster
+  + Could animate your poster as a GIF
+  + Use the text to include additional contextual information not on the poster
+  
+### Keep it short and simple
+
+Avoid the temptation to summarise every little thing about your study. You should be thinking about your poster as a **visual abstract**. Something to advertise your research and your skills.
+
+* Focus on just **one or two key messages** about your study
+  + This could be key findings or interesting innovations/applications of your methodology
+* Prioritise including information that the audience **needs** to know first
+* Only include information on the poster that is relevant to these key messages
+  + You may have the chance to highlight other parts of your study when asked questions by audience members
+
+> "It seems that perfection is attained not when there is nothing more to add, but when there is nothing more to remove" Antoine de Saint Exupery ^[Quoted originally in the #betterposter videos]
+
+Use this quote as a guiding rule. Always ask yourself what is *needed*, *relevant*, and *engaging*.
+
+There is no set rule when it comes to a word count although the rules of your session/conference may dictate one which you should follow.
+
+* Some resources will say keep it under 1,000 words ^[Colin Purrington blog, see link above]
+* Others around 300 - 800 ^[NYU guide, see link above]
+* One guide even suggests restricting yourself down to just 250 ^[LSE guide, see link above]
+
+The best advice that can be given here is to consider how much you are comfortable saying and how much it is you have to say, as well as think about what might the audience be expecting. 
+
+The following sections are the standard parts to include for a research poster although what you need to include may depend on your purpose and how far along in your study you are.
+
+***Introduction***
+
+* Make this something quick to **grab the readers attention**
+* Let them know *why* they should keep reading
+* Get across the point and relevance of your study
+* Perhaps draw them in with a hypothesis/research question
+
+***Methods/Approach***
+
+* To some this may actually be the most interesting part, especially if your method is quite innovative
+  + if so, be sure to give this section great attention so you can explain why your method is special
+* Otherwise, keep this section brief to focus on your findings and interpretations
+* Where possible, display your approach through a diagram or pictures.   
+  + Especially if the study was an experimental design or a trial
+
+***Results***
+
+* This will likely take up more space on the poster than any other section
+* Only include the most interesting and relevant findings
+  + Don't include anything that doesn't **need** to be there
+* Unless your study was using qualitative data analysis, this section will likely include only short sentences
+* Use graphs, maps, and tables which help to illustrate the key findings and messages
+
+***Discussion/Conclusion***
+
+* Some will choose to separate these two into different sections
+* Focus only on interpreting your most relevant and interesting results
+* Try to explain what your findings mean in plain language. 
+* The audience will want to know *why* your results are important and interesting
+
+***References***
+
+* Always to be included if you reference any material on your poster
+* Keep this small and to the bottom of the page
+
+***Acknowledgements***
+
+* Acknowledge your institution, employer, tutors and any colleagues who aided you.
+* Good to provide contact details to keep up engagement after the session
+
+### Make it engaging
+
+If your poster is displayed at a conference, in person or online, you may be fighting for attention with hundreds of other posters within a limited time frame. 
+
+You must attract and engaging.
+
+Think about your poster as an advert for your research. What can you include to draw in potential "customers"?, how can you make them remember you?
+
+This will come down to both your presentation and design of your poster as well as the interactions you have with your audience. 
+
+***Tips to engage with your presentation***
+
+* Grab them with your title. Consider making the title a statement of your key finding
+* Use imagery
+  + Photos
+  + Graphs
+  + Diagrams
+  + Maps
+* Don't use too many graphs
+* Don't use overly-complicated hard to read graphs
+* Avoid tables where possible
+  + Keep them simple if they are used
+* Avoid complicated inaccessible language
+  + Broad plain language will be understood by a larger audience
+* Use colour effectively
+  + Don't use too many different colours. Pick a couple to design a colour palette/scheme
+  + Avoid overly saturated colours
+* Be creative with your medium
+  + Can you use interactive screens?
+  + Using twitter? Could animate your presentation as a GIF
+  
+Also think about the information that you include on your poster.
+
+***What information is going to trigger interesting conversations with your audience?***
+
+* Hypotheses
+* Research Questions
+* Surprising results
+* Important recommendations
+* New theories/models?
+* Ask the audience questions to make them think
+  
+***Tips to engage with your interactions***
+
+* Be prepared in advance to answer any and all questions
+* Include your contact details prominently on your poster
+* Consider printing out smaller hand out versions of your poster
+* Details on where to find the paper and poster online
+* Keep notes with additional notes at hand that you can refer to
+* Advertise your poster beforehand using social media
+
+
+### Some examples
+
+![Example 1: Our compeition winning twitter poster Authors: Alex Thomson and Emily Nevitt](img/YISA Poster 2020.png)
+
+This poster keeps the word count short to less than 300 words, down from a dissertation over 19,000 words, and picks out just two key descriptive findings
+
+Maps and an interesting graph dominate the page to draw in the audience.
+
+![Example 2: RMS Poster Author: Ric Coe](img/CCRP poster 1.png)
+
+A large interesting diagram draws the eye
+
+Shows that research and studies is not the only reason to make a poster as this is designed to illustrate key principles, examples and practices.
+
+```{r, echo = FALSE, fig.align='center'}
+knitr::include_graphics("img/GIS East Africa Poster.png")
+```
+
+Example 3: CCRP Poster - GIS East Africa Authors: Were K, Macharia PN, Nyamai M, Tanui LK, Okech P, Ngigi MM, Ngigi TG, Onchaga R, Matara S, Odhiambo S and Lali F
+
+Again it is kept short and simple with many photos, maps and diagrams used to succinctly illustrate the key messages.
+
+![Example 4: CCRP Poster - Pigeon Pea FRN Authors: Ng'ang'a J, Layatuu E and Keya A](img/Pigeon Pea FRN.png)
+
+A smart use of the traditional design keeping the word count fairly low and choosing plenty of imagery to illustrate the results and methodology. 
+
+![Example 5: CCRP Poster - Sorghum Kenya Authors: F. Wamunga, A. Were, E.J Too, B.O Nyongesa, F.Odiwuor, E. Ouma, S. Gudu](img/Sorghum Kenya.png)
+
+Makes use of the traditional design also with good use of imagery and space, very informative and includes all relevant sections. Arguably may include too much text however. 
+
+
+### Other resources
+
+*Colin Purrington Blog filled with plenty of tips, dos and dont's and templates*
+
+[Blog](https://colinpurrington.com/tips/poster-design/)
+
+[Templates](https://colinpurrington.com/2019/06/templates-for-better-posters/)
+
+*Some helpful guides provided by universities*
+
+[New York University](https://guides.nyu.edu/posters)
+
+[University of Reading](https://www.reading.ac.uk/web/files/dps/Conference_poster_PPT_examples.pdf)
+
+[London School of Economics](https://blogs.lse.ac.uk/impactofsocialsciences/2018/05/11/how-to-design-an-award-winning-conference-poster/)
+
+[University of Manchester](http://www.supi.manchester.ac.uk/forteachers/academicposterguidance/)
+
+[UC Davis](https://urc.ucdavis.edu/creating-effective-academic-posters)
+
+*#betterposter campaign*
+
+[Video 1](https://www.youtube.com/watch?v=1RwJbhkCA58&t=2s&ab_channel=MikeMorrison)
+
+[Video 2](https://www.youtube.com/watch?v=SYk29tnxASs&ab_channel=MikeMorrison)
+
+[Video 3: Twitter Posters](https://www.youtube.com/watch?v=fQDL8r3r_d4&ab_channel=MikeMorrison)
+
+[Response Article](https://www.insidehighered.com/news/2019/06/24/theres-movement-better-scientific-posters-are-they-really-better)
+
+*Whole website devoted to academic research posters*
+
+[Acedemicposter.org](https://www.academicposter.org/)
+
+[PosterPresentations.com](https://www.posterpresentations.com/index.html)
+
+*Academic Papers*
+
+[Rowe and llic: Rethinking poster presentations at large-scale scientiﬁcmeetings – is it time for the format to evolve?](https://febs.onlinelibrary.wiley.com/doi/epdf/10.1111/febs.13383)
+
+[Gundogan et al: How to make and academic poster](https://www.sciencedirect.com/science/article/pii/S2049080116301303)
+
+[Miller Preparing and Presenting Effective Research Posters](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1955747/)
+
+***Examples***
+
+*Pintrest boards*
+
+[Board 1](https://www.pinterest.co.uk/jing4717/academic-poster/)
+
+[Board 2](https://www.pinterest.at/tzesire/conference-posters-design/)
+
+*Other*
+
+[UMBC collection of inter-disciplinary examples](https://ur.umbc.edu/poster-presentation-examples/)
+
+*Template collections*
+
+[Template Lab](https://templatelab.com/research-posters/)
+
