@@ -63,7 +63,10 @@ There are a couple base design types that have become common over the years.
 
 ***Traditional Design***
 
-![Traditional Poster Example Auother: Alex Thomson (PLACEHOLDER!!!!)](img/Map.png)
+```{r, echo = FALSE, fig.align='center', fig.height= 0.5}
+knitr::include_graphics("img/trad example 1.png")
+```
+Traditional Poster Example Auothr: Alex Thomson (Note: Crude example of design, not all text is relevant)
 
 Each section within individual text boxes arranged into 2/3 columns oriented portrait or landscape.
 
@@ -92,7 +95,7 @@ Suggested by American PhD student Mike Morrison in a series of videos critical o
 
 This has become a larger campaign being take up in real world applications and with plans in the works to conduct full studies into its efficacy.
 
-The approach takes a user experience approach to poster design to increase the size of a potential audience, imporve readability and more memorable.
+The approach takes a user experience approach to poster design to increase the size of a potential audience, improve readability and more memorable.
 
 This is done by putting overwhelming emphasis on the key findings and results with these taking up the majority of the space on the page.
 
@@ -120,10 +123,19 @@ While the right panel (*ammo bar*) is filed with additional information that fin
 * Mostly designed for in-person conferences.
 * QR code being included assumes there are additional resources to link to. Not always the case.
 * To a more critical audience, may appear simple and reductive.
-* Still a new approach so may be a off-utting to some stuck in traditional ways
+* Still a new approach so may be a off-putting to some stuck in traditional ways
 * Assumes you have a key finding to present.
  + May not be as appropriate for posters not designed for studies or those which prioritise methods
 * "Ammo bar" assumes presence of a knowledgeable presenter
+
+Although you do not have to follow its format exactly if you do not feel comfortable using it. The principles behind its creation are sound and should be considered regardless of your design. Using a user design experience approach, the campaign suggests;
+
+* Limiting the amount of information presented. Focus on the most important information.
+* Making the poster easier and quicker to read
+* Making the experience more useful to the audience, less information means they can make the most out of their time and look at more posters
+* Removing any barriers to your poster. Things that will stop someone from wanting to read it.
+
+There will be other ways to achieve these same goals.
 
 ![#betterposter template](img/Better Poster template.png)
 
@@ -141,7 +153,7 @@ Assumes generally you have lots and lots of interesting numbers, results and fac
 
 Can be off-putting to supply the audience with so much information at once.
 
-```{r, echo = FALSE, fig.align='center', fig.height= 0.5}
+```{r, echo = FALSE, fig.align='center',out.height="25%", out.width="50%"}
 knitr::include_graphics("img/infographic.jpg")
 ```
 [Source of infographic: Visual.ly](https://visual.ly/community/Infographics/technology/infographics-benefits-their-use-online?utm_source=visually_embed)

@@ -59,24 +59,145 @@ Ric
 
 # Presenting results as tables and graphs 1 {#tablegraph1}
 
-Needed in all other sections	
-Sam	Alex’s guide
+## Video
+
+```{r,echo=FALSE,out.width="100%"}
+knitr::include_url("https://www.youtube.com/embed/lbt4BH9Q82E")
+```
+
+## The importance of visualising data
+
+Visualising data is an essential part of communicating messages and results to any form of audience. An ineffective visualisation of data can communicate a very misleading message. 
+
+Building skills in data visualisation can help you to understand and see important results in other people’s tables, graphs, and maps. This is in addition to enabling you to create informative visualisations of your own.
+
+The aim of this chapter is to provide some principles behind making good data visualisations.
+
+This guide is intended for anyone who wishes to develop their data visualisation and reporting skills. The advice presented here will be applicable to a wide variety of situations and is not specific to certain topics. Additionally, we hope that users of all ability levels will be able to take this advice to mind in their future projects and their everyday interactions with data.
+
+[add some more points here - bullet pointed??]
+
+## Principles of data visualisation
+
+Through developing your data visualisation skills, you can generate a wide variety of graphical/cartographic/tabular representations of data. This could be anything from simple bar graphs and line graphs to complicated cartograms. However, regardless of the complexity of your chosen data visualisation technique, there are certain principles that should always be followed:
+
+### Effectiveness
+
+By effectiveness, we mean you should be ensuring that you are using the right type of visualisation for your objectives and priorities. This is the first crucial step in making sure what you produce is effective at displaying the message you intend to show. If you pick the wrong method, your visualisation will not be effective regardless of its quality. 
+
+Maps are of course for displaying data which have some form of geographic component.
+
+Tables are suited for presenting structured numerical information; consider tables of means across some groups, frequencies, or some statistical information. This makes them ideal for when the message is in the specific numbers and potentially the relationship between them. 
+Graphs are quite multi-purpose; there is a type of graph for almost any message you could be wanting to convey. In general, we would choose to use them for indicating trends, making broad comparisons, or showing relationships. 
+
+### Readability
+
+All elements of your visualisation should be legible, understandable, and coherent. In a word, readable. While this largely relates to any textual elements of your visualisations, the principle is applicable to the whole visualisation.
+
+This includes having titles and headings which concisely explain the content. It should be informative without being overly long and confusing. The same goes for any further labels such as axis labels for graphs, column headings for tables and geographic labels on a map.
+
+Details to consider mentioning include measurement units, geographical coverage, time, the source of the data and any relevant statistics. 
+Of course, the elements of a visualisation will vary depending on what visual you produce, but they should always be easy to read and understand.
+
+You can achieve this by avoiding language beyond the scope of your target audience, providing the necessary information needed to read your visual and presenting the element in a simple and tidy manner. You will find further guidance on specific elements in each of the subsequent sections of this guide.
+
+### Tidiness
+
+A visualisation should never be cluttered. This follows on from readability, although more specifically relates to positioning and spacing of elements as well as avoiding using unnecessary elements. 
+
+This includes making sure no elements are overlapping; there should be adequate spacing between them without there being so much that it makes the visualisation look empty. This can also be described as making good use of “white space”. 
+
+There is much more to be said on this topic, but these are mostly specific to the type of visualisation you are using. The general principle of ensuring your visual is neat and organised is always applicable. 
+
+### Informative
+
+A good data visualisation serves to succinctly show a message about our findings. We aim to inform our reader. Usually, it would be accompanied by some text which helps to interpret the visualisation, placing it into a wider context or providing more formal details such as the results of a relevant statistical analysis.
+
+However, a good data visualisation should be self-explanatory and should be able to serve as a stand-alone piece. The reader should be able to understand the message without constantly referring to the text. Much of this can be accomplished by sticking to the particulars of keeping your visual tidy and readable. 
+
+Whenever creating a table, graph, or a map, you should include the source of the information from which the visualisation was created. This aids the credibility of your visualisation but also ensures a properly informed audience. An exception is when all information that is used for visualisations in a report comes from the same source. In this case, you should clearly indicate the source in advance of your visualisations.
+
+This also means making sure that your visual is necessary in the first place. Consider the following: Can you achieve the same message with some simple text? Can a visualisation accurately demonstrate your results, or would it be distracting? Are your results too complex to visualise in isolation?
+
+### Accessibility
+
+Accessibility has become an increasingly important aspect of data presentation in recent years. Ensuring good practice in accessibility will help in getting an even wider audience to see our research and use our results. The Government Statistical Service makes content accessible to those with impairments to their vision, hearing, mobility, and thinking/understanding skills. For our purposes, we are mostly concerned with visual impairments. 
+
+There are some general principles on accessibility, including making sure you explain any uncommon abbreviations, avoiding clutter and keeping information concise. However, we are focusing on the use of colour. Further guidance on this is included in the accessibility section of this document. This includes considerations of colour blindness, cultural context, and the use of saturation/hue/luminance. 
+
+### Consistency
+
+This is mostly relevant when you are intending to use multiple visualisations across your report. When doing so, it is important to ensure you maintain a level of internal consistency. 
+
+This involves many aspects. For instance, if you intend to disaggregate your visuals by the levels of a variable, pay attention to the order you put these categories in. They should be kept to a logical or ascending/descending order and this order should be kept the same for the sake of consistency and readability. 
+
+The same goes for when using colours to indicate certain characteristics of the data; keep the meaning of the colours consistent. 
+Of course, this is also important for all the smaller details such as the font, size and face (bold/italic) of text. In essence, try to keep the formatting between visualisations as similar as possible. Generate your personal visual style and stick to it. Changing things up too much will just confuse your audience and reduce your visual’s readability. 
+
+## Other Resources
+
+***General***
+
+[Our extensive guide which also covers maps]()
+
+[GSS – Introduction to Data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-7)
+
+[Informative Presentation of Tables, Graphs and Statistics](https://stats4sd.org/resources/412)
+
+[Data visualisation examples](https://stats4sd.org/resources/59)
+
+[Tips on effective use of tables and figures in research papers](https://www.editage.com/insights/tips-on-effective-use-of-tables-and-figures-in-research-papers)
+
+[Tufte Principles](https://sites.google.com/site/tufteondesign/home/six-fundamental-principles-of-design)
+
+[Blog with accompanying free guide](https://blog.hubspot.com/marketing/great-data-visualization-examples)
+
+***Tables***
+
+[Exporting Tables from R using Flextable, Kable and gt](https://stats4sd.org/resources/506)
+
+[Preparing tables for research papers](https://www.manuscriptedit.com/scholar-hangout/preparing-tables-research-papers/)
+
+[Formatting Tables in MS word](http://www.docs.is.ed.ac.uk/skills/documents/3575/3575.pdf)
+
+***Graphs***
+
+[R Graphics Cookbook](https://r-graphics.org/)
+
+[Financial Times – Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/blob/master/visual-vocabulary/Visual-vocabulary.pdf)
+
+***Accessibility***
+
+[ONS – Web accessibility](https://style.ons.gov.uk/writing-for-the-web/web-accessibility/introduction-3/)
+
+[Tableau – Colour Blindness](https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463)
+
+***Good Examples***
+
+[Reddit - r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)
+
+***Bad Examples***
+
+[Reddit - r/dataisugly](https://www.reddit.com/r/dataisugly/)
+
+[towardsdatascience.com article](https://towardsdatascience.com/why-is-this-chart-bad-5f16da298afa)
 
 <!--chapter:end:02-tablegraph1.Rmd-->
 
-# Presenting results as tables and graphs  2 factorial expts {#factor}
+# Presenting results across multiple factors {#factor}
+```{r,echo=FALSE,message=FALSE}
+library(tidyverse)
+library(knitr)
 
-Narrower topic 	()
-Sam		Can we make it relevant to observational studies as well as expts?
+```
 
 ## Introduction
 
-A common task in presenting results is how to show differences in a numeric outcome variable across multiple different explanatory variables. Often this will result from conducting a factorial treatment experiment, for example a randomised complete block design looking at whether yield varies across 5 different varieties of a crop, with 3 different levels of nitrogen fertiliser used. 
+A common task in presenting results is how to show how an outcome variable differs across multiple explanatory factors. Often this will result from conducting a factorial treatment experiment, for example a randomised complete block design looking at whether yield varies across 5 different varieties of a crop, with 3 different levels of nitrogen fertiliser used. However the same principles are common to any analysis where we are wishing to compare the effects of multiple factors all at once, where they are designed 'treatments' or observed responses from a survey.
 
-Particularly with factorial experiment - the design has been arrived at with a purpose in mind already. That purpose should be reflected in the way they are analysed and presented.
+Whenever visualising results across multiple factors we should be thinking of ways to clearly and effectively show the impacts of all of these different factors; rather than simply highlighting 'best' or the 'worst.
 
-When visualising these results we should be thinking of ways to clearly and effectively show the impacts of all of these different factors - not just show produce plots sowing the 'best' or the 'worst;
-
+In some cases, particularly considering a classic factorial experiment, the design of the trial itself provides a framework for how we should be visualising the results. In others there may be multiple options, some of which we can determine to be more effective than others,
 
 ## Embed Video Here
 
@@ -89,9 +210,10 @@ knitr::include_url("https://www.youtube.com/embed/lbt4BH9Q82E")
 
 
 ## Overall principles
-*	There is never only one right way to present results. But there are ways that are more or less effective at getting over a message. Trial and error of different plot configurations before committing to one is a really useful process for thinking through and refining the presentation. Don't expect to immediately land on the 'best' answer.
 
-What is effective depends on:
+A key principle to bear in mind always is that there is never only one correct way to present results. But there definitely lots of incorrect or extremely ineffective ways. Even following a set of principles a certain amount of iteration and trial and error of different plot configurations will help the thought process and ensure that you are choosing a sensible and effective plot to convey your message.  Don't expect to immediately land on the 'best' answer.
+
+What is effective depends on a few criteria:
 *	The message or objectives. The same data can be presented in different ways to highlight different trends.
 *	The design or structure of the data. Consider how many different variables you have, and how many response levels are in those variables, and what sort 
 *	The actual observed data - this will inform scales, transformations and may lead you into presenting results in multiple different plots, or all in a single plot.
@@ -102,7 +224,7 @@ What is effective depends on:
 The following apply to any response that is measured on experimental units, even if we usually think of a continuous variable typified by ‘yield’. We are going to use some simulated data in this document to show the process for comparing 'yield' across a factorial experiment. The design incorporates two treatment factors -  "Type" (A, B or C) and "Inputs" (0, 100 or 200). There were 20 farmers who all included the 9 treatment combinations. The 20 farmers are split across 3 sites (X, Y and Z) and we may also be interested in assessing the gender of the farmer (Male or Female).
 
 
-```{r}
+```{r,echo=F,include=F,message=FALSE}
 set.seed(46)
 
 library(tidyverse)
@@ -157,42 +279,56 @@ dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==200 & dt1$Type == "C", rnorm(5,15,
 dt1$Yield<-dt1$Yield+rnorm(nrow(dt1),mean=dt1$ranef,sd=0.1)
 dt1$Inputs<-factor(dt1$Inputs)
 
+write.csv(dt1,"factorial_data.csv",row.names=F)
+
+```
+```{r,echo=F,message=F}
+dt1<-read.csv("factorial_data.csv")
+dt1$Yield<-round(dt1$Yield,1)
+dt1 %>%
+  select(Type,Inputs,Farmer,Gender,Site,Yield) %>%
+  DT::datatable()
+
 ```
 
 
 
 ## Key ideas
 
-1. Response to stimulus or input is observed at discrete treatment levels. In the example dataset we have created the 'response' is yield and the main treatment levels we are considering are the combinations of 'type' and 'inputs'. We have 9 combinations in total, three levels of type and three levels of inputs, and 20 observations of each combination coming from the 20 farms. Therefore we have 9 mean yield values, and 9 distributions of yield, that we need to compare to be able to assess the results.
+1. > *Response to stimulus or input is observed at discrete levels of a factor*. In the example dataset we have a factorial experiment where the 'response' is yield and the designed treatment factors we are considering are the combinations of 'type' and 'inputs'. 
+We have 9 combinations or 'treatments' in total: three levels of type and three levels of inputs, and 20 observations of each combination coming from the 20 farms. Therefore we have 9 mean yield values, and 9 distributions of yield, that we need to compare to be able to assess the results. Simply looking at the numbers in a table, or in a plot displayed as if these 9 treatments as independent is going to be a poor representation of the results. The numbers and plot will allow us simply to identify the highest (C/200) and lowest (b/0) treatment combinations. But it will not allow us to make any inferences easily about the overall effects of type and inputs, or the interactions between them.
 
-```{r}
+```{r,echo=FALSE,message=F}
 dt1 %>% 
   group_by(Type,Inputs) %>%
-    summarise("n"=n(),"Mean Yield"=round(mean(Yield),1),"SD Yield"=round(sd(Yield),1))
-
-```
-
-Simply looking at the numbers in a table, or conducting the standard analysis of variance, is not going to tell us as much as a well thought through visualisation. However the ANOVA results here do help to inform us that there are statistically significant effects of type, inputs and the interaction between the type and inputs within this trial.
-
-```{r}
-library(lmerTest)
-
-lmer(Yield~Type*Inputs+(1|Farmer),data=dt1) %>%
-  anova()
+    summarise("n"=n(),"Mean Yield"=round(mean(Yield),1),"SD Yield"=round(sd(Yield),1)) %>%
+      kable()
 
 ```
 
 
-2. Conventional plot:   input or stimulus F = horizontal , response y = vertical
+ 
 
-```{r}
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+ggplot(aes(y=Yield,x=interaction(Type,Inputs)),data=dt1) +
+  stat_summary(geom="col")+
+      ylab("Mean Yield")+
+  xlab("Type + Input")
+```
+ 
+
+
+2. > A conventional one-factor plot. The response on the y axis and the input or stimulus or irsk factor on the x axis.
+We could seperate out the two factors and produce seperate plots for each. This would be more informative than what we see in stage 1, since we could more easily gain an understanding of the impacts of each factor. However it would be an extremely limited interpretation by ignoring the secondary factors. 
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
 ggplot(aes(y=Yield,x=Type,group=1),data=dt1) +
   stat_summary(geom="line")+
     stat_summary(geom="point",colour="red",size=4)+
       ylab("Mean Yield")
 ```
 
-```{r}
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
 ggplot(aes(y=Yield,x=Inputs,group=1),data=dt1) +
   stat_summary(geom="line")+
     stat_summary(geom="point",colour="red",size=4)+
@@ -201,19 +337,39 @@ ggplot(aes(y=Yield,x=Inputs,group=1),data=dt1) +
 
 
 
-3. Interaction: modification of, or non-parallel, response curves
+3. >In most cases the interaction between factors will be of most interest. We want to understand if the impact of factor `x` and factor `y` are operating independently or if they in some way modify each other. The easiest way to understand this is through investigation of whether the trends are parallel. Parallel lines in an interaction plot suggest there is no interaction between the variables. Non-parallel lines, whether they diverge or cross, indicate there is an interaction. The ability to assess this is another reason why using lines is a much more visually powerful way to illustrate trends than using bars.
 
-```{r}
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
 ggplot(aes(y=Yield,x=Inputs,group=Type,colour=Type),data=dt1) +
   stat_summary(geom="line")+
     stat_summary(geom="point",size=4)+
       ylab("Mean Yield")
 ```
 
-4. More than two factors (F, A, B,…): same applies but more choices now and higher order interactions hard to interpret. Two choices:
-5. A, B, … of equal status or interest: one line for each combination of A and B.
 
-```{r}
+4. > The interaction of "Inputs X Type" is the same as the interaction of "Type X Inputs", and the presentation provides identical information. But the way we interpret and read the plots is not the same. We may find it easier to read one particular orientation over the other. Or both orientations may be useful to highlight particular patterns which only become clearer when the positioning of the elements is reversed.  It will depend on the results, and the variables themselves whether one will be more effective or whether both may be possiblities. There may not be only one way to present.
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+dt1 %>%
+  ggplot(aes(y=Yield,x=Site,group=Type,colour=Type)) +
+  stat_summary(geom="line")+
+    stat_summary(geom="point",size=4)+
+      ylab("Mean Yield")
+```
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+ggplot(aes(y=Yield,x=Type,group=Site,colour=Site),data=dt1) +
+  stat_summary(geom="line")+
+    stat_summary(geom="point",size=4)+
+      ylab("Mean Yield")
+```
+
+
+
+5. >If there are more than two factors the same applies but more choices now and higher order interactions hard to interpret. Two choices:
+We could consider combing two factors together, if they are seen as being of equal importance, and have one line for each combination of factors. But this quickly becomes hard to interpret.
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
 ggplot(aes(y=Yield,x=Inputs,group=interaction(Type,Site),colour=interaction(Type,Site)),data=dt1) +
   stat_summary(geom="line")+
     stat_summary(geom="point",size=4)+
@@ -221,9 +377,10 @@ ggplot(aes(y=Yield,x=Inputs,group=interaction(Type,Site),colour=interaction(Type
 ```
 
 
-6. Primary focus on FxA, with B… modifiers or varying context: use B,… as facets so that the FxA pattern can be compared.
 
-```{r}
+6. >If there are two factors of primary interest, where the third is a modifying variable or different context, then it makes sense to use facets. In the example data we have this exact case - with Inputs and Types being our variables of primary interest, and Site being a contextual variable. Therefore plotting into multiple facets allows us to compare whether the relationships within the experiment (Input by Type) vary by the location of the experiment.
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
 ggplot(aes(y=Yield,x=Inputs,group=Type,colour=Type),data=dt1) +
   stat_summary(geom="line")+
     stat_summary(geom="point",size=4)+
@@ -231,46 +388,39 @@ ggplot(aes(y=Yield,x=Inputs,group=Type,colour=Type),data=dt1) +
       ylab("Mean Yield")
 ```
 
-7. The FxA interaction and presentation is identical information content as the AxF  interaction and presentation. But the message that it is easy to read from the two is not the same.  Hence (a) for a specific objective or story, one will be more effective than another, (b) there may not be only one way to present, (c) with >2 factors the possibilities increase rapidly
 
+7. >In practice, the observations on the graph come with uncertainty in their position. Part of the function of statistical analysis is to estimate the uncertainty so that (a) it can also be represented on the graph  (b) we can separate pattern that is noise (possibly just due to random, unrepeatable variation) from that which is signal (repeatable, consistent across repetitions).
 
-```{r}
-ggplot(aes(y=Yield,x=Site,group=Type,colour=Type),data=dt1) +
-  stat_summary(geom="line")+
-    stat_summary(geom="point",size=4)+
-      ylab("Mean Yield")
-```
-
-```{r}
-ggplot(aes(y=Yield,x=Type,group=Site,colour=Site),data=dt1) +
-  stat_summary(geom="line")+
-    stat_summary(geom="point",size=4)+
-      ylab("Mean Yield")
-```
-
-
-![image3](img/Picture3.jpg)
-8. In practice, the observations on the graph come with uncertainty in their position. Part of the function of statistical analysis is to estimate the uncertainty so that (a) it can also be represented on the graph  (b) we can separate pattern that is noise (possibly just due to random, unrepeatable variation) from that which is signal (repeatable, consistent across repetitions).
-
-```{r}
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
 ggplot(aes(y=Yield,x=Type,group=Site,colour=Site),data=dt1) +
   stat_summary(geom="line")+
     stat_summary(fun.data=mean_cl_normal)+
       ylab("Mean Yield")
 ```
 
-9. If the effect of one or more factors is considered noise  then we can average over them and display main effects (…  hard to explain this concisely. Its not just main effects but eg FxA in an experiment with F, A and B…)
+8. >If the effect of one or more factors is considered noise  then we can average over them and display main effects. In all of the presentations so far we have averaged over at least one of the factors to illustrate a point. But when putting the final story together we need to consider which factors are important. We should also be looking to our formal statistical analysis for guidance here, by considering which factors we have sufficient evidence to conclude are components of significant interactions. If the variables themselves are significant, but interactions are not, then averaging over these variables will be OK in terms of representing the key effects.
 
-```{r}
-ggplot(aes(y=Yield,x=Inputs),data=dt1) +
+
+```{r,message=FALSE,echo=FALSE}
+library(lmerTest)
+
+lmer(Yield~Inputs*Type*Site*Gender+(1|Farmer),data=dt1) %>%
+  anova()
+
+```
+In this case our analysis suggests Gender is not a statistically significant factor, but Inputs, Type, Site and all of the interactions between these variables are statistically significant. Therefore we should reflect that in our final plot - not showing the interactions between the three factors will be misleading, but averaging over gender will not cause any issues.
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+ggplot(aes(y=Yield,x=Inputs),data=subset(dt1,Site=="Y"&Type=="A")) +
   stat_summary(geom="line",aes(group=1))+
     stat_summary(geom="point",aes(group=Gender,col=Gender),size=4)+
+    facet_grid(Site~Type)+
       ylab("Mean Yield")
 ```
 
 
 
-## Fun shiny test
+## Shiny
 
 ```{r,echo=FALSE,out.width="100%"}
 knitr::include_url("https://shiny.stats4sd.org/factorialexperiments",height="1000px")
@@ -278,52 +428,80 @@ knitr::include_url("https://shiny.stats4sd.org/factorialexperiments",height="100
 
 
 
-## In practice
+## The general process
 
 ### Step 1: Set out the objectives, message or hypothesis for the story you want to tell with the graph you are designing
 
-a. >There may be several in one data set, so think which it is. Multiple graphs can be created to illustrate different messages. If it can be stated as something like ‘We know y responds to F.  The hypothesis investigated concerns the way this response is modified by A. We expect…    This modification will be higher at B=1 than at B=0 …’
-b. >In all this discussion, it does not really matter which factors are strictly treatments (randomised in the design) and which are unrandomized context factors (eg location). It makes a difference to the statistical analysis and the nature of inference, but not to the drawing of graphs.
-c. >Likewise, complexities in layout (eg Is it split-plot design? Where there incomplete blocks?...) affect the stats not design of the graphs. 
-d. >Experiments often have treatment structure that is partially or not-quite a factorial.  That’s ok – most of what is here still applies but there might be a few points that are not there or extras added.
+a. >There may be several messages from the same data set, so think which it is. Using the same graph for multiple purposes may sometimes be possible, but using multiple well constructed graphs will likely do a better job of illustrating these different messages. 
+b. >It does not really matter which factors are strictly treatments (randomised in the design) and which are unrandomized context factors (eg location) or observed characteristics. These maks a difference to the statistical analysis and the nature of inference, but not to the drawing of graphs.
+c. >Likewise, complexities in layout (eg Is it split-plot design? Where there incomplete blocks? Is it a survey?) will affect the statistics, and maybe the calculation of the estimates being plotted, but not to the general design of the graphs. 
+d. >Experiments often have treatment structure that is partially or not-quite a factorial, if not all treatment combinations are present. Or there may be very poorly estimated combinations with just a few observations where the plots may be misleading if they were to be included.  That’s OK – most of what is here still applies but there might be a few points that are not there or extras added. Only showing a subset of the data to focus on the specific comparisons is also a good strategy to focus the message of the plot, without the additional confusion of incomplete or very low sample size combinations.
+
+
 ![image5](img/Picture5.png)
 
 
 ### Step 2: Remember experiments are set up to make comparisons
-a. >Generally the absolute level of y is less important than differences.
-
-
+a. >Generally the absolute value of y is less important than differences. "Average" rarely exists in reality, farmers are unlikely to obtain the average value of yield, but a comparison of efficacy ("A will likely yield better than B") is more generalisable and more applicable.
 
 
 
 ### Step 3: Maintain the visual metaphor
-a. >One rule of graphics: So we break the rule of response on the vertical axis with something like this:
-b. >If the horizontal axis is quantitative then the order is natural. If it is qualitative try to find an ordering that adds some value eg – order by level of another variable, by some property of the category,… Definitely do not just keep the data order, which is likely to be nothing more than purely alphabetical.
-![image6](img/Picture6.jpg)
+a. >One core rule of all graphics, we want to make the way the plot is read intuitive and make sure the audience needs to refer to the axes as little as possible to understand what is being displayed. So we break the rule of response on the vertical axis with something like this:
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+ggplot(aes(y=Yield,x=Inputs,group=1),data=dt1) +
+  stat_summary(geom="line")+
+    stat_summary(geom="point",size=4)+
+      ylab("Mean Yield")+
+        coord_flip()
+```
+
+b. >If the horizontal axis is quantitative then the order is natural. If it is qualitative try to find an ordering that adds some value eg – order by level of another variable, by some property of the category. Definitely do not just keep the data order, which is likely to be nothing more than purely alphabetical. In the example data we saw earlier re-ordering the sites to go from lowest to highest average yields will provide a much easier and clearer interpretation than the arbitrary alphabetical order.
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+dt1 %>%
+  mutate(Site=factor(Site,levels=c("Y","Z","X"))) %>%
+  ggplot(aes(y=Yield,x=Site,group=Type,colour=Type)) +
+  stat_summary(geom="line")+
+    stat_summary(geom="point",size=4)+
+      ylab("Mean Yield")
+```
+
 
 ### Step 4: Lines	 
-a.	>I like to join points even of levels of F are discrete because it shows up which points are logically connected and the concept of interaction = non-parallel become visual.
+a.	>Even where levels of the factor are discrete joining points together shows up which points are logically connected and the concept of interaction = non-parallel become visual. Bars are an extremely poor choice of visualisation tool for showing means, variability and comparisons across multiple factors. There use should be limited solely to percentages and frequencies, and even then only when there is a single factor being displayed.
 
 ### Step 5: Multiple factors	 
-a.	>More than2 factors is actually common when you remember that location and year are often there. It would be natural to have an aim of looking at the what response to F is modified by A and whether that is the same each season (S)  and local (L)
+a.	>More than factors is actually common, even if there are only two 'treatments' when you consider location, year are often there. It would be natural to have an aim of looking at the what response to F is modified by A and whether that is the same each season (S)  and local (L)
 
 ### Step 6: Colours and symbols	 
-a.	>Remember you can vary colour, symbol, line style….  So if we plot FxAxB it might be with levels of A as solid v broken, levels of B as    red v green.
-![image7](img/Picture7.png)
+a.	>Remember you can vary colour, symbol, line style.  So if we do choose to plot three factors, with two factors combining to form the lines, a better option would be to have the two factors represented through different aesthetic elements.
+
+```{r,echo=FALSE,message=FALSE,fig.height=3,fig.width=5}
+ggplot(aes(y=Yield,x=Inputs,group=interaction(Type,Gender),linetype=Gender,shape=Gender,colour=Type),data=dt1) +
+  stat_summary(geom="line",size=1)+
+    stat_summary(geom="point",size=3)+
+      ylab("Mean Yield")
+```
 
 
 ### Step 7: Facets	 
-a.	>So the FxA experiment done in 2 locations in each of 2 seasons could be plotted with a facet grid…
-![image8](img/Picture8.jpg)
+a.	>Facets to can make it easier to display even up to four variables simultaneously if we also use a gridded facet layout - e.g. main interaction of interest showing Type by Inputs; but with row facets corresponding to gender and column facets corresponding to location.
 
-### Step 8: Interate	 
-a.	>Talking to researchers about real experiments almost always leads to discussion about response to one factor (often known) be modified by one or more others. The challenge: find examples in agric where that is not the case!  If you really don’t want to make the distinction then…?  Resorting to multiple factors on the x-axis is rarely a great idea….
+```{r,echo=FALSE,message=FALSE,fig.height=5,fig.width=7}
+dt1 %>%
+  ggplot(aes(y=Yield,x=Inputs,group=Type,colour=Type)) +
+  stat_summary(geom="line")+
+    stat_summary(geom="point",size=4)+
+      ylab("Mean Yield")+
+        facet_grid(Gender~Site)
+```
+
 
 ### Step 9: Next steps
-a.	>Plotting responses that have been averaged over levels of one or more factors ( not getting into messy questions about weights etc)
-b.	>Statistical significance v practice significance ( eg a graph of main effects might be useful even if there is statistically significant interaction as long as it is small) 
-c.	>Representing uncertainty. The standard ‘error bars’ on means are actually meaningless for most experimental data. SEDs and CIs of differences better but only easy for neat experiments. Etc
-d.	 >Related to points b) and c) – providing context within the plot related to sample sizes and design – build in information to help audience assess the robustness of the level of evidence provided. 
+a.	>Talking to researchers about real experiments almost always leads to discussion about response to one factor (often known) be modified by one or more others. The challenge: find examples where that is not the case!
+b.	>Statistical significance v practice significance e.g. a graph of main effects might be useful even if there is statistically significant interaction as long as it is small. But in general if there is a significant interaction we should be looking to display this and not overlook it for the sake of finding an easy answer.
+c.	>Representing uncertainty. The standard ‘error bars’ on means are actually meaningless for most experimental data. SEDs and CIs of differences better but only easy for neat experiments. See chapter {LINK}
+d.	 >Start thinking about labeling, and visual components beyond just the mechanical composition. See chapter {LINK}
 
 <!--chapter:end:03-factorial.Rmd-->
 
@@ -416,7 +594,10 @@ There are a couple base design types that have become common over the years.
 
 ***Traditional Design***
 
-![Traditional Poster Example Auother: Alex Thomson (PLACEHOLDER!!!!)](img/Map.png)
+```{r, echo = FALSE, fig.align='center', fig.height= 0.5}
+knitr::include_graphics("img/trad example 1.png")
+```
+Traditional Poster Example Auothr: Alex Thomson (Note: Crude example of design, not all text is relevant)
 
 Each section within individual text boxes arranged into 2/3 columns oriented portrait or landscape.
 
@@ -445,7 +626,7 @@ Suggested by American PhD student Mike Morrison in a series of videos critical o
 
 This has become a larger campaign being take up in real world applications and with plans in the works to conduct full studies into its efficacy.
 
-The approach takes a user experience approach to poster design to increase the size of a potential audience, imporve readability and more memorable.
+The approach takes a user experience approach to poster design to increase the size of a potential audience, improve readability and more memorable.
 
 This is done by putting overwhelming emphasis on the key findings and results with these taking up the majority of the space on the page.
 
@@ -473,10 +654,19 @@ While the right panel (*ammo bar*) is filed with additional information that fin
 * Mostly designed for in-person conferences.
 * QR code being included assumes there are additional resources to link to. Not always the case.
 * To a more critical audience, may appear simple and reductive.
-* Still a new approach so may be a off-utting to some stuck in traditional ways
+* Still a new approach so may be a off-putting to some stuck in traditional ways
 * Assumes you have a key finding to present.
  + May not be as appropriate for posters not designed for studies or those which prioritise methods
 * "Ammo bar" assumes presence of a knowledgeable presenter
+
+Although you do not have to follow its format exactly if you do not feel comfortable using it. The principles behind its creation are sound and should be considered regardless of your design. Using a user design experience approach, the campaign suggests;
+
+* Limiting the amount of information presented. Focus on the most important information.
+* Making the poster easier and quicker to read
+* Making the experience more useful to the audience, less information means they can make the most out of their time and look at more posters
+* Removing any barriers to your poster. Things that will stop someone from wanting to read it.
+
+There will be other ways to achieve these same goals.
 
 ![#betterposter template](img/Better Poster template.png)
 
@@ -494,7 +684,7 @@ Assumes generally you have lots and lots of interesting numbers, results and fac
 
 Can be off-putting to supply the audience with so much information at once.
 
-```{r, echo = FALSE, fig.align='center', fig.height= 0.5}
+```{r, echo = FALSE, fig.align='center',out.height="25%", out.width="50%"}
 knitr::include_graphics("img/infographic.jpg")
 ```
 [Source of infographic: Visual.ly](https://visual.ly/community/Infographics/technology/infographics-benefits-their-use-online?utm_source=visually_embed)
