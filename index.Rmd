@@ -19,31 +19,31 @@ This page is an introduction. I will write some text later
 ## Contents
 
 [Presenting results as story telling](#story)
-One line summary
+Coming soon
 
 [Presenting results as tables and graphs 1](#tablegraph1)
-One line summary
+Overview of general issues to consider for visual presentation of results
 
 [Presenting results as tables and graphs  2 factorial expts ](#factor)
-One line summary
+How to deal with multiple factors, and interactions
 
 [Presenting results as tables and graphs  3 Precision](#precision)
-One line summary
+Coming soon
 
 [Presenting results as tables and graphs  4 for farmers](#farmers)
-One line summary
+(Video Only)
 
 [Presenting in papers](#papers)
-One line summary
+Coming soon
 
 [Presenting on posters](#posters)
-One line summary
+presenting results for posters
 
 [Adapting to audiences](#audience)
-One line summary
+Modifying your presentation for different audiences
 
 [Presenting as show and tell](#showandtell)
-One line summary
+Coming soon
 
 [Reviewing,  critiquing and improving presentation](#review)
-One line summary
+Coming soon

@@ -1,14 +1,16 @@
 # Presenting results as tables and graphs 1 {#tablegraph1}
 
-## Video
+## DRAFT
+
+## Video Under Construction
 
 ```{r,echo=FALSE,out.width="100%"}
-knitr::include_url("https://www.youtube.com/embed/lbt4BH9Q82E")
+
 ```
 
 ## The importance of visualising data
 
-Visualising data is an essential part of communicating messages and results to any form of audience. An ineffective visualisation of data can communicate a very misleading message. 
+Visualizing data is an essential part of communicating messages and results to any form of audience. An ineffective visualisation of data can communicate a very misleading message. 
 
 Building skills in data visualisation can help you to understand and see important results in other people’s tables, graphs, and maps. This is in addition to enabling you to create informative visualisations of your own.
 
@@ -29,7 +31,11 @@ By effectiveness, we mean you should be ensuring that you are using the right ty
 Maps are of course for displaying data which have some form of geographic component.
 
 Tables are suited for presenting structured numerical information; consider tables of means across some groups, frequencies, or some statistical information. This makes them ideal for when the message is in the specific numbers and potentially the relationship between them. 
-Graphs are quite multi-purpose; there is a type of graph for almost any message you could be wanting to convey. In general, we would choose to use them for indicating trends, making broad comparisons, or showing relationships. 
+Graphs are quite multi-purpose; there is a type of graph for almost any message you could be wanting to convey. In general, we would choose to use them for indicating trends, making broad comparisons, or showing relationships.
+
+For instance, the pie chart below is completely unnecessary. While it is looks fine, the information is not being shown well by the use of a graph, certainly not by a pie chart. This is not helped by there being far too many colours and countries. The more effective way to display this information would be a table.
+
+![An Unnecessary Pie Chart](img/Bad pie chart.png)
 
 ### Readability
 
@@ -42,6 +48,12 @@ Of course, the elements of a visualisation will vary depending on what visual yo
 
 You can achieve this by avoiding language beyond the scope of your target audience, providing the necessary information needed to read your visual and presenting the element in a simple and tidy manner. You will find further guidance on specific elements in each of the subsequent sections of this guide.
 
+The example below makes a simple error. In an attempt to stop overlapping axis labels, the text size has been reduced to be far too small. A much simpler solution would have been to swap the x and y axis over. We are also missing a title and the y axis is uninformative.
+
+![Too small to read the labels](img/bar chart poor.png)
+
+![Much easier to read](img/order restored.png)
+
 ### Tidiness
 
 A visualisation should never be cluttered. This follows on from readability, although more specifically relates to positioning and spacing of elements as well as avoiding using unnecessary elements. 
@@ -49,6 +61,7 @@ A visualisation should never be cluttered. This follows on from readability, alt
 This includes making sure no elements are overlapping; there should be adequate spacing between them without there being so much that it makes the visualisation look empty. This can also be described as making good use of “white space”. 
 
 There is much more to be said on this topic, but these are mostly specific to the type of visualisation you are using. The general principle of ensuring your visual is neat and organised is always applicable. 
+
 
 ### Informative
 
@@ -60,11 +73,27 @@ Whenever creating a table, graph, or a map, you should include the source of the
 
 This also means making sure that your visual is necessary in the first place. Consider the following: Can you achieve the same message with some simple text? Can a visualisation accurately demonstrate your results, or would it be distracting? Are your results too complex to visualise in isolation?
 
+The example below makes an easy mistake in which by trying to provide too much information the plot actually becomes very difficult to read and therefore fairly uninformative as its difficult to learn anything from it. It is far too tasking to look at so many relationships at once so nothing is learned from this. Plus there are some difficult concepts being used with no understanding of measurement so this graph would not make sense out of context.
+
+![Far too many variables](img/Too many variables.png)
+
+
+```{r, fig.height= 0.5, echo = FALSE}
+knitr::include_graphics("img/not too much man.png",)
+```
+
+Much better
+
+
 ### Accessibility
 
 Accessibility has become an increasingly important aspect of data presentation in recent years. Ensuring good practice in accessibility will help in getting an even wider audience to see our research and use our results. The Government Statistical Service makes content accessible to those with impairments to their vision, hearing, mobility, and thinking/understanding skills. For our purposes, we are mostly concerned with visual impairments. 
 
 There are some general principles on accessibility, including making sure you explain any uncommon abbreviations, avoiding clutter and keeping information concise. However, we are focusing on the use of colour. Further guidance on this is included in the accessibility section of this document. This includes considerations of colour blindness, cultural context, and the use of saturation/hue/luminance. 
+
+It is quite easy to forget to consider how our visualisations may appear to other people. The example below shows you just how different your visualisation may look to someone who suffers from visual impairments such as colour blindness.
+
+![Left - a normal looking graph, Right - What it looks like to a colour blind person](img/colour blind comine.png)
 
 ### Consistency
 
@@ -73,7 +102,12 @@ This is mostly relevant when you are intending to use multiple visualisations ac
 This involves many aspects. For instance, if you intend to disaggregate your visuals by the levels of a variable, pay attention to the order you put these categories in. They should be kept to a logical or ascending/descending order and this order should be kept the same for the sake of consistency and readability. 
 
 The same goes for when using colours to indicate certain characteristics of the data; keep the meaning of the colours consistent. 
+
 Of course, this is also important for all the smaller details such as the font, size and face (bold/italic) of text. In essence, try to keep the formatting between visualisations as similar as possible. Generate your personal visual style and stick to it. Changing things up too much will just confuse your audience and reduce your visual’s readability. 
+
+The example below unnecessary changes the order of the y axis and changes the meanning of the colours. While the graphs are okay as stand alone pieces, together they diminish the effectiveness of the whole visualisation. 
+
+![Unnecessary change of colour](img/b2b plots.png)
 
 ## Other Resources
 

@@ -1,9 +1,12 @@
 # Presenting results across multiple factors {#factor}
+
 ```{r,echo=FALSE,message=FALSE}
 library(tidyverse)
 library(knitr)
 
 ```
+
+## DRAFT
 
 ## Introduction
 
@@ -13,12 +16,10 @@ Whenever visualising results across multiple factors we should be thinking of wa
 
 In some cases, particularly considering a classic factorial experiment, the design of the trial itself provides a framework for how we should be visualising the results. In others there may be multiple options, some of which we can determine to be more effective than others,
 
-## Embed Video Here
-
-(Not this video but just demo-ing functionality)
+## Video 
 
 ```{r,echo=FALSE,out.width="100%"}
-knitr::include_url("https://www.youtube.com/embed/lbt4BH9Q82E")
+knitr::include_url("https://www.youtube.com/embed/z2LIAAn-uas")
 ```
 
 
@@ -237,7 +238,7 @@ ggplot(aes(y=Yield,x=Inputs),data=subset(dt1,Site=="Y"&Type=="A")) +
 ## Shiny
 
 ```{r,echo=FALSE,out.width="100%"}
-knitr::include_url("https://shiny.stats4sd.org/factorialexperiments",height="1000px")
+knitr::include_url("https://shiny.stats4sd.org/factorial-experiments-2",height="1000px")
 ```
 
 

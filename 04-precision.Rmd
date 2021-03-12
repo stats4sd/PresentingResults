@@ -1,3 +1,63 @@
-# Presenting results as tables and graphs  3 Precision {#precision}
+# Precision and variability {#precision}
 
-Narrower topic	Carlos/Sam		Old SSC docs to revise?
+```{r,echo=FALSE,message=FALSE}
+library(tidyverse)
+library(knitr)
+
+fs<-read.csv("fallowsurvey.csv")
+
+fs$hhsize<-ifelse(fs$adults!="6+",as.numeric(as.character(fs$adults)),6)+sample(0:3,replace=TRUE,prob=c(4,3,2,1),size = 1479)
+fs$hhsize[is.na(fs$hhsize)]<-1
+data1<-data.frame(n=10:1000,sd=NA,se=NA)
+
+for(i in 10:1000){
+    data1$sd[i-9]=sd(fs$hhsize[1:i])
+    data1$se[i-9]=data1$sd[i-9]/sqrt(i)
+}
+
+```
+
+## SECTION UNDER CONSTRUCTION
+
+## Introduction
+
+When presenting results it can be tempting to focus solely on the main patterns and trends we can identify through our analysis. But we always have to bear in mind the levels of uncertainty we have in those trends, and the underlying variability that will exist around those trends. So it is important to consider how we could incorporate these ideas of precision and variability into the way we present our results to assist our audience by providing as much relevant context to the results as we can.
+
+## Video
+
+```{r,echo=FALSE,out.width="100%"}
+
+```
+
+## Precision vs Variability
+
+When considering this topic we need to be clear on the difference between *precision* and *variability*. Although these concepts are related, they tell us two different things both of which are important:
+
+Precision refers to the uncertainty in the *estimates* or statistics that we calculate from our data. As the amount of data we have increases the amount of precision we have increases. For example - if we were trying to estimate mean household size based on a sample size of 1, then the precision in that mean would be extremely low. But if we had a sample size of 10,000 households we could estimate the mean from then we would have a much more precise estimate.   
+
+Variability refers to the underlying variability in the sample, and in the population. This is not impacted by increasing the sample size, other than that increasing the sample size will increase the precision in our estimates of variability!
+
+
+## Precision
+
+### Confidence intervals vs. standard errors
+
+### In tables
+
+### Around trends
+
+### Overload of error bars?
+
+## Variability
+
+### Plots which can display variability
+
+#### Boxplots/Violin Plots
+
+#### Histograms
+
+#### Cumulative Frequency Plots
+
+#### Scatter plots
+
+### In tables. Is standard deviation always the answer?

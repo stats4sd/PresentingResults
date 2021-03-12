@@ -1,3 +1,144 @@
-# Adapting to audiences	{#audience}
+# Adapting to the audience {#audience1}
 
-Adapting to audiences		Nico		Check where this fits in the sequence
+## DRAFT
+
+## Video
+
+```{r,echo=FALSE,out.width="100%"}
+knitr::include_url("https://www.youtube.com/embed/df2dCLx0c44")
+```
+
+## Without a conscious effort, a presentation is unlikely to be well adapted to its audience
+
+When we prepare a presentation, it is easy to simply imagine ourselves as the audience and use this perspective to decide what to show and how. Unfortunately, we are not at all a good representative sample of our future audience because:
+
+-	We already know what the presentation is about
+-	Even if we imagine knowing nothing about the content of the presentation, we can't help but imagine someone with a knowledge, background and way of reasoning that is similar to ours... and that kind of person cannot be representative of the audience either.
+
+So, when we prepare a presentation, it is very important that we make a conscious effort of adapting it to our audience. Otherwise, we're likely to lose it at some point or another. Here are the reasons why:
+
+
+1.	**Your audience comes with a specific background** Some might be researchers, other might be students. They might be working in the same field, but maybe in a different context, or they might also be working on a completely different field. And we need to adapt the presentation to the diversity of the backgrounds. That's probably the most obvious of the things to be aware of when presenting results.
+
+2.	**The audience know less than we think they know** What I mean by that is not that they know very little. They might actually know a lot about the topic, maybe even more than you, but their knowledge will always come from a perspective and experience that is different from yours. And in the end, they will nearly always be weaker than you think in terms of knowledge that align with your personal approach to things. So when you try and evaluate the knowledge level of your audience, keep in mind that your evaluation is always too optimistic.
+
+3.	**The audience is not in our brain** - we can't assume that a reasoning process that makes sense to us will automatically make sense to them. So, we always need to guide the audience in our reasoning process, even when it seems obvious to us.
+
+4.	**We are not in the audience’s brain either** - naturally they will not look exactly where we want them to look at and they will likely be distracted by things that would not necessarily distract us. And so here again, we need to account for it and guide them, so that they stay with us at all time throughout the presentation.
+
+
+
+## So what to do?
+
+Here are some things you can do to address each the points raised above:
+
+### 1. Our audience comes with a specific background, different from ours
+To address the issue of the audience coming with a specific background,
+-	Try to use terms and vocabulary that will be understood by everyone - avoid jargon and acronyms.
+-	Try to put yourself in the shoes of each type of person likely to be there as your audience. And simply ask yourself “If I had this particular background, What would help me to follow the presentation?”
+-	Be sure to clearly explain all the things without which someone would not be able to follow the presentation. Buuuut I remind you - don't forget about time and so really focus on explaining **only** the things that are absolutely necessary to follow the presentation. Be very selective about what you say, and when in doubt, skip it.
+That is -> Say little, but say it very clearly! (and keep the rest for the questions)
+
+
+
+
+### 2. Our audience know less than we think they know
+
+-	Double-check the key parts of your script. These things that are necessary to follow your presentation. Will someone who has only very basic knowledge about the area be able to follow it?
+o	If you're not totally sure whether something essential in your presentation is clear enough, then it's probably not clear enough. Make it clearer. If your presentation becomes too long, rethink what is essential and what is not and skip what is not.
+
+
+### 3. Our audience is not in our brain
+
+Here are a few recommendation to make sure you’re not loosing your audience in your reasoning
+-	Whenever you're talking about a process that is a bit complex, give a very quick overview about the process first, to prepare the audience for what is coming.
+-	Don't hesitate to repeat yourself in order to make your main points and reasoning clear.
+-	Whenever you find yourself thinking "well I don't need to say that. It will be clear by looking at the slide", No, this kind of thought is a strong indication that you actually NEED to say that thing.
+
+
+
+### 4. We are not in the audience’s brain either
+
+I am going to spend a bit more time on this one, because I think it is the point that is the most overlooked, while the actions to address it might be the easiest to implement.
+-	First Make your slides in a way that forces the audience to look at what you want them to look at - that is, limit the number of things on a slide to a minimum, so that the audience doesn't have any choice but to follow the path you decided for them.  – For example, if someone was showing me a slide like this one, I would have a lot of choices for things to look at. I could look at the table, the graph, I could try and read the text, the titles… and clearly it is not possible that all of these are relevant to what the presenter would be saying at a certain point in time. The presenter can try to direct the audience, but chances are that all these things on the slide will distract them at one point or another from what the presenter is saying. In contrast, if the presenter put these items on different slides, in an order that align with their script, there’s nothing to do for the audience but to follow what the presenter wants to show.
+-	Second thing is: Keep the amount of text on slides to a minimum. Having a lot of text is simply THE best way to annoy an audience. Because it is boring, but also because for lots of people it is hard not to read what’s in front of them, and since reading and listening at the same time is extremely difficult, these people will not be able to follow what you’re saying. And if you need text to help you remember what you have to say, remember that PowerPoint has a note section that is made exactly for that ! So move your script in the note and in the slide, add a picture that illustrates what you’re saying. Ideally, you want the picture to be referred to in the script, so that is not just illustrative, but useful! 
+-	Third thing that you can do is. When what you put on a slide is a bit complex, first, try to simplify it, and if you can't, then make sure you guide the audience through it.
+o	A good example is graphs. Graphs are always complex, to some degree. there are axes, shapes, colours, numbers, labels... many things to look at and they all require some time to be understood. Even if it's just for a few seconds, an audience that is trying to understand a graph will not be able to fully focus on what you're saying. So, don't make the audience figure things out on their own. You know that they will spend a moment figuring out the graph anyway, so you might as well go along with that, rather than say something in that moment that they will miss! Do the work for them by guiding them through the components of the graphs each time you have a graph in your slide s; And the same goes for tables. As an example, even with a simple graph like this one, I could be saying something like “as you see, the majority of Farmers consider Brachiaria grass to be useful to feed livestock”, but then the audience will certainly wonder for a few second if what I’m saying is indeed what we see in the graph, to check that, they will need to understand what the axis are and then check the height of the bar. It won’t take long, but for a short moment, they won’t be focused on what I’m saying. Instead it would be much better to help the audience understand the graph first and say something like: “In this graph, the height of the bars represent the percentage of farmers who consider Brachiari grass to be useful for a specific use, and on the horizontal axis we have some of those specific uses. So for example About 70 % of farmers consider this grass to be useful for controlling pest.” And that’s it, I can now continue with the point I want to make, without being worried of loosing my audience. 
+
+
+
+
+### dshsh
+
+Tips:
+Now I want to finish with a couple of tricks that I believe are useful to help you to follow some of the guidelines discussed here, without really trying to:
+-	The first one is to plan your presentation by imagining that you’re explaining things to a 10 year-old kid; it's a bit extreme, but it will force you to be clear, only focus on the important, and to guide your audience during the presentation. And let me tell you, if you make a presentation that a 10 year-old kid can follow and understand, you have made a very good presentation!
+-	The second useful tip is to try and do your presentation live, on a piece of paper. Indeed, the issue with slides is that you build them in advance. It's partly an advantage of course, as it allows you to put nice graphs and think about the design... but it is also a disadventage because since you don’t have the audience in front of you while you’re preparing your slides, the idea of guiding the audience becomes something that is not intuitive. In contrast, when you explain something to someone, using a pen and a blank piece of paper, you intuitively guide the person with your pen and write or draw things only when it’s relevant. If you then plan the order and content of your slides according to how you present things with pen and paper, I assure you that your presentation will likely be very good!
+
+Finally I’d like to mention Two potential arguments against all the things I’ve said and to comment on these:
+-	First is that Planning well and thinking about all of points and suggestions I’ve given you is time consuming. And yes, that’s true. It is definitely time consuming. And so there is a Balance to find, because Everything is time consuming. But keep in mind that if the audience doesn’t understand your presentation, your presentation becomes pointless!
+-	The second thing is an argument for having lots of text and information in the slides rather than keeping these to a minimum to not distract the audience from what you’re saying. This argument is that sometimes, power point presentations are also intended to become standalone material. In such situation, one might think that all the information that would be given by the presenter should be in the slides. Well maybe, but I’d like to challenge this because there are alternatives. First, as said earlier, you can actually place your full script in the note section, which is part of your PowerPoint file, so if you share your slides, you also share your script. Maybe you can also make a separate version of the slides that is specifically for sharing. And finally what about sharing a recording of the presentation? Now that you’re ready to make top notch presentations!
+
+
+
+
+
+-	Put little text, avoid tables. Choose wording, colours and icons/images very carefully. Icons can be great, but if not chosen carefully they can quickly do more harm than good
+-	You may want to keep things extra simple, but more important is making sure that what is shown is intuitive – and careful! Not easy to guess what will be intuitive to farmers – expl: though simple, barcharts might not be so intuitive
+-	Provide lots of guidance (obviously), but be very receptive to farmers reactions and adapt to it – spend more time on the things they are interested in, and on the key points where you feel they struggle. Skip the things where you feel they struggle too much though.
+-	Try hard that farmers feel related to what is presented:
+o	would help if they took part in experiment or similar experiment
+o	try to present things in a way that is familiar to them – explain how results have been obtained in a way that follows the usual process in a farm for example.
+o	Might be easiest to understand a graph if they can find themselves in the graph - each farmer is represented by a point or a line – and emphasize this by giving examples
+o	focus on the results that are useful for them
+o	keep in mind that sometimes it might be better letting a farmer present the results – in which case you might need to go beyond presenting and provide training to a farmer on presenting the results.
+
+
+## Other Resources
+
+***General***
+
+[Our extensive guide which also covers maps]()
+
+[GSS – Introduction to Data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-7)
+
+[Informative Presentation of Tables, Graphs and Statistics](https://stats4sd.org/resources/412)
+
+[Data visualisation examples](https://stats4sd.org/resources/59)
+
+[Tips on effective use of tables and figures in research papers](https://www.editage.com/insights/tips-on-effective-use-of-tables-and-figures-in-research-papers)
+
+[Tufte Principles](https://sites.google.com/site/tufteondesign/home/six-fundamental-principles-of-design)
+
+[Blog with accompanying free guide](https://blog.hubspot.com/marketing/great-data-visualization-examples)
+
+***Tables***
+
+[Exporting Tables from R using Flextable, Kable and gt](https://stats4sd.org/resources/506)
+
+[Preparing tables for research papers](https://www.manuscriptedit.com/scholar-hangout/preparing-tables-research-papers/)
+
+[Formatting Tables in MS word](http://www.docs.is.ed.ac.uk/skills/documents/3575/3575.pdf)
+
+***Graphs***
+
+[R Graphics Cookbook](https://r-graphics.org/)
+
+[Financial Times – Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/blob/master/visual-vocabulary/Visual-vocabulary.pdf)
+
+***Accessibility***
+
+[ONS – Web accessibility](https://style.ons.gov.uk/writing-for-the-web/web-accessibility/introduction-3/)
+
+[Tableau – Colour Blindness](https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463)
+
+***Good Examples***
+
+[Reddit - r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)
+
+***Bad Examples***
+
+[Reddit - r/dataisugly](https://www.reddit.com/r/dataisugly/)
+
+[towardsdatascience.com article](https://towardsdatascience.com/why-is-this-chart-bad-5f16da298afa)
+
