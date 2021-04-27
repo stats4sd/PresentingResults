@@ -1,9 +1,9 @@
 # Presenting results across multiple factors {#factor}
 
-```{r,echo=FALSE,message=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
 library(tidyverse)
 library(knitr)
-
+library(Hmisc)
 ```
 
 ## DRAFT
@@ -18,8 +18,8 @@ In some cases, particularly considering a classic factorial experiment, the desi
 
 ## Video 
 
-```{r,echo=FALSE,out.width="100%"}
-knitr::include_url("https://www.youtube.com/embed/z2LIAAn-uas")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/0k-xc6YOtWc"}
+knitr::include_url("https://www.youtube.com/embed/0k-xc6YOtWc")
 ```
 
 
@@ -39,64 +39,6 @@ What is effective depends on a few criteria:
 The following apply to any response that is measured on experimental units, even if we usually think of a continuous variable typified by ‘yield’. We are going to use some simulated data in this document to show the process for comparing 'yield' across a factorial experiment. The design incorporates two treatment factors -  "Type" (A, B or C) and "Inputs" (0, 100 or 200). There were 20 farmers who all included the 9 treatment combinations. The 20 farmers are split across 3 sites (X, Y and Z) and we may also be interested in assessing the gender of the farmer (Male or Female).
 
 
-```{r,echo=F,include=F,message=FALSE}
-set.seed(46)
-
-library(tidyverse)
-dt1<-expand.grid(Type=c("A","B","C"),Inputs=c(0,100,200),Farmer=1:20) %>%
-  full_join(data.frame(Farmer=1:20,Gender=sample(c("Male","Female"),20,replace=TRUE),Site=c(rep("X",8),rep("Y",7),rep("Z",5)),ranef=rnorm(20,sd=2)))
-
-
-
-## simulations. Ignore Gender.
-## Sites different - X high Y low Z middle
-## Inputs different - increase with Input
-## Type effect - C high with high input and high with X
-## B high with low input and high with Y
-## A in middle
-dt1$Yield<-NA
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==0 & dt1$Type == "A", rnorm(8,10,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==100 & dt1$Type == "A", rnorm(8,12,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==200 & dt1$Type == "A", rnorm(8,15,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==0 & dt1$Type == "B", rnorm(8,9,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==100 & dt1$Type == "B", rnorm(8,10,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==200 & dt1$Type == "B", rnorm(8,11,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==0 & dt1$Type == "C", rnorm(8,12,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==100 & dt1$Type == "C", rnorm(8,15,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="X" & dt1$Inputs==200 & dt1$Type == "C", rnorm(8,18,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==0 & dt1$Type == "A", rnorm(7,5,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==100 & dt1$Type == "A", rnorm(7,6,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==200 & dt1$Type == "A", rnorm(7,7,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==0 & dt1$Type == "B", rnorm(7,7,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==100 & dt1$Type == "B", rnorm(7,9,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==200 & dt1$Type == "B", rnorm(7,10,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==0 & dt1$Type == "C", rnorm(7,5,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==100 & dt1$Type == "C", rnorm(7,6,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Y" & dt1$Inputs==200 & dt1$Type == "C", rnorm(7,7,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==0 & dt1$Type == "A", rnorm(5,10,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==100 & dt1$Type == "A", rnorm(5,12,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==200 & dt1$Type == "A", rnorm(5,15,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==0 & dt1$Type == "B", rnorm(5,8,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==100 & dt1$Type == "B", rnorm(5,10,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==200 & dt1$Type == "B", rnorm(5,11,2),dt1$Yield)
-
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==0 & dt1$Type == "C", rnorm(5,10,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==100 & dt1$Type == "C", rnorm(5,12,2),dt1$Yield)
-dt1$Yield<-ifelse(dt1$Site=="Z" & dt1$Inputs==200 & dt1$Type == "C", rnorm(5,15,2),dt1$Yield)
-
-dt1$Yield<-dt1$Yield+rnorm(nrow(dt1),mean=dt1$ranef,sd=0.1)
-dt1$Inputs<-factor(dt1$Inputs)
-
-write.csv(dt1,"factorial_data.csv",row.names=F)
-
-```
 ```{r,echo=F,message=F}
 dt1<-read.csv("factorial_data.csv")
 dt1$Yield<-round(dt1$Yield,1)
@@ -237,7 +179,7 @@ ggplot(aes(y=Yield,x=Inputs),data=subset(dt1,Site=="Y"&Type=="A")) +
 
 ## Shiny
 
-```{r,echo=FALSE,out.width="100%"}
+```{r,echo=FALSE,out.width="100%",fig.cap="https://shiny.stats4sd.org/factorial-experiments-2"}
 knitr::include_url("https://shiny.stats4sd.org/factorial-experiments-2",height="1000px")
 ```
 

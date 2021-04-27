@@ -1,6 +1,156 @@
 # Presenting in papers {#papers}
 
-## SECTION UNDER CONSTRUCTION
+*Ric Coe*
+
+## Key points
+
+* Publish as a scientific journal article is still a very important way of presenting research results even though other formats are also important.
+
+* Reading good scientific articles is the first prerequisite for writing them. 
+
+* There are standards and conventions that you need to learn and plenty of resources for leaning them. 
+
+## Reasons
+
+Your results are probably part of important work done with and  for farmers, and you would like them to benefit from the results.  You might also have important messages for NGO workers or policy makers. These audiences do not generally read articles ( ‘papers’) in scientific journals. So why is it important for you to publish such papers, as well as communicating with those other audiences?  
+
+There 4 main reasons:
+
+1. Contributions to science. You are doing applied research but it is research and should be contributing to the global knowledge base of science, as well as helping solve problems. The journal article is still the standard way to do that. Other scientists will not benefit from your new knowledge unless you share it via this accepted channel.
+
+2. Scientific reputations depend on publishing in journals. The scientific reputation of you, your team and your organisation depend on your publication record. In the scientific world, publishing is a key determinant of promotion, getting funding and new jobs.
+
+3. Scientific publication includes processes of review which act as quality control. If your paper is accepted by a good journal that reviews carefully then it is a guarantee of quality.
+
+4. Because of the reasons 1, 2 and 3 above, publication is often a requirement if you are a student, have a job in a research organisation or have research funding.
+
+## Writing scientific papers
+
+There are boundless support resources available on writing scientific papers – guides, advice, books, videos,etc. A few of those we have found useful are described below. Hence there is no purpose served by presenting our own version here. In this chapter we describe some important points that are less commonly found elsewhere, then point to examples of other resources.
+
+## Two prerequisites for writing good papers
+
+### Reading
+
+If you want to write good papers then you need to read good papers, lots of them and not only from your field. ‘Good’ can mean:
+
+* papers that have been shown to effective because many people have noticed, read and cited them. 
+* papers that you personally find inspiring or intriguing. 
+
+When you read such a paper note what makes it effective and learn from that.
+
+### The story
+
+If you think of a typical paper you probably think of the standard structure with its introduction, methods, results and discussion. However, the starting point for a good paper is not that structure but the story you wish to tell. Most research results can be presented in different ways that highlight different observations and interpretations. Some will be more important and convincing than others. You need to select the focus and story of your results before trying to write.
+
+## The writing process - Video
+
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/V-o9QbJQzTQ"}
+knitr::include_url("https://www.youtube.com/embed/V-o9QbJQzTQ")
+```
+
+The video accompanying this chapter mainly focuses on the process of writing a paper as that is less commonly described in other resources. Everyone will develop their own approach to writing but when you are faced with the task for the first time it can be daunting.    
+
+The key recommendations in the video are:
+
+1. Work by creating outlines then slowly adding detail, rather than starting at the beginning and working through to the end.
+
+2. Get input from others frequently in this process.  Critical review by colleagues and team mates, your supervisor and other scientists is invaluable. Seek review in conjunction with point 1 above – the first review might be of a single page of bullet-points that sets out the core idea of the paper. The second round of review might come after you have included the most important graphs and tables of results. This is far more efficient than completing a draft manuscript before asking for comments.
+
+## Trends in science publishing
+
+There are many traditions and conventions in the whole process of publishing scientific papers that you need to understand if you are to join in. However, things do change and you should be aware of recent trends in publication as your supervisor, for example, may not be!   The broad area of agricultural science is conservative in publication practice but some of these changes are becoming important.
+
+* Change to the standard structure of a paper so that findings and conclusions are presented before details of methods and results.
+
+*	Additional parts of the paper such as highlights or a graphical abstract (a single graphic that summarises the paper).
+
+*	A requirement for the data used in the paper to be published at the same time.
+
+*	Publication of supplementary material that is not included in the main text.
+
+*	Evidence that the research had ethical clearance before it was started.
+
+*	Allowing colour graphics and high resolution images or photos that appear in electronic versions of the paper.
+
+*	Public, non-anonymous review or commentary on a paper before it is accepted for publication.
+
+## Two difficult areas
+
+The following sections discussion the two problems that we are most often asked about, particularly by student authors.
+
+### Choosing a journal
+
+I could not find definitive data on the number of scientific journals that exist but estimates suggest it is >30,000. Even within your area of research there are hundreds of titles. How do you choose which one to submit your paper to? First, three points you need to understand because they influence choice of journal.
+
+1. Journals have differing reputations, with some being more prestigious than others.  You would like your paper to be published in a journal with a good reputation where it will be noticed and read.  But publishing in ‘high end’ journals it is very competitive and even excellent papers can have small chance of acceptance.  Hence you need to be realistic where you pitch your paper. Journals use ‘impact factors’ to rank themselves, but these are very flawed indicators of quality.
+
+2. Nearly all journal publication is done by for-profit businesses, whether it is an international corporation or a small start-up. Hence someone needs to pay the costs involved.  The two business models are: the author pays to publish the paper or the reader pays to access the paper (or both). These days there is general agreement that publicly funded research should be freely available to anyone to read and ‘open access’ publication is becoming standard. It is a requirement of some institutions and research funders. Hence you (or your research project) will probably have to pay some publication costs. These vary greatly but cheaper is not always better – see point 3.
+
+3. One of the reasons formal publication of science results is important is the review and editorial process the paper has to go through. It provides a quality control process – imperfect but better than nothing. So if a journal cuts corners on review and editing then it is not performing its function. Some journals certainly do cut corners. You can find plenty of cases described in which the quality of reviewing and editing was tested and found lacking.
+
+So, how do you choose a journal? 
+
+- Consider the journals that have published recent papers that are comparable to yours in content, style and depth.
+
+- Look at the papers in recent volumes of these journals. Would you like your paper to appear alongside papers like those?  If you notice things which look erroneous or poorly argued then it’s a sign the review process might not be working. If you see typographic errors, muddled language or poorly present graphics then the editorial process might not be working and you should avoid those journals.
+
+- Ask for recommendations from more experienced colleagues.
+
+- Read the journal description and check that it looks OK for your work.
+
+### Authorship
+
+Being named as the author of a book, paper or other product has some advantages listed at the start of this chapter. However it also has some responsibilities. As an author you are responsible for errors of fact or interpretation and you have to be able to defend the paper when it is criticised. For many people, including journal editors, there is also an ethical issue. Claiming authorship when you are not actually an author is simply lying: it is dishonest. So who qualifies to be an author?
+Many journals publish guidance on authorship and some require each author to sign a declaration that they qualify.  
+
+The common criteria are:
+
+1. Provide substantial intellectual input to the conception and design or analysis and interpretation of the research. 
+
+2. Contribute substantially to writing the text (not just editing). 
+
+3. Approve the submitted version 
+
+Thus people who are core contributors to the research are likely to be authors. Those whose roles are mainly administrative or data collection may not be.
+
+## Resources
+
+**Books**
+
+* This book, Scientific Writing for Agricultural Researchers, is a complete text on writing papers. [Book](https://www.coraf.org/documents/CTA116_scientificwritingbook%20FINAL%20nov%202012.pdf)
+
+* This second book, Scientific Writing and Communication in Agriculture and Natural Resources, convers similar ground. [Book](https://link.springer.com/content/pdf/10.1007%2F978-3-319-03101-9.pdf)
+
+Both books are comprehensive and deal with traditionally structured papers.
+
+* IMRAD Structure is described in this Wikipedia article:
+[Article](https://en.wikipedia.org/wiki/IMRAD) That article has a long list of reporting standards.
+
+**General advice on writing science papers**
+
+* A paper in Nature on good papers provides  sound advice for any journal. [Article](https://media.nature.com/original/magazine-assets/d41586-018-02404-4/d41586-018-02404-4.pdf)
+
+* Several good articles on papers in Natures Scitable. [Journal](https://www.nature.com/scitable/topic/scientific-communication-14121566/)
+
+* A brief account of a good paper [Article](https://www.nature.com/articles/nmeth.4532)
+
+* This one titled How to write consistently boring scientific literature is good value! [Article](https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.0030-1299.2007.15674.x)
+
+**Review Process**
+
+* How to do peer review [Article](https://www.nature.com/articles/d41586-018-06991-0)
+
+**Examples of good papers**
+
+Included below are a few examples of what I consider good papers.  Not all are from agriculture. I have explained why I have included them.
+
+A fascinating account with a sample size of N=1!  [Arctic fox dispersal from Svalbard to Canada: one female’s long run across sea ice | Polar Research](https://polarresearch.net/index.php/polar/article/view/3512)
+
+A good example of writing up action research: [“We were treated like adults”—development of a pre-medicine summer school for 16 year olds from deprived socioeconomic backgrounds: action research study | The BMJ](https://www.bmj.com/content/332/7544/762)
+
+
+Exemplary description of an observational study: [The case of the disappearing teaspoons: longitudinal cohort study of the displacement of teaspoons in an Australian research institute | The BMJ](https://www.bmj.com/content/331/7531/1498)
 
 
 

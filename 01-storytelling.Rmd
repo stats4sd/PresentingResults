@@ -1,3 +1,128 @@
 # Presenting results as story telling {#story}
 
-## UNDER CONSTRUCTION
+*Ric Coe*
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(tufte)
+```
+
+
+> "Truths cannot walk on their own legs. They must be carried by people to other people. They must be explained,  defended and spread through language, argument and appeal.^[Campbell et al (2014). The Rhetorical Act: Thinking, Speaking, and Writing Critically, 5th Edition. Cengage Learning, Stamford, YUSA] 
+>
+>`r tufte::quote_footer('--- Campbell et al (2014)')`
+
+## Key Points
+
+Effective presentation of research results starts with identification of the story you are trying to tell.  The ‘result’ is not a series of tables and graphs. The result you need to present is something new, important and exciting that you want to share.
+
+## Video
+
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/V-o9QbJQzTQ"}
+knitr::include_url("https://www.youtube.com/embed/V-o9QbJQzTQ")
+```
+
+## Scientific results and story telling
+
+The scientific process is often portrayed as objective and value-neutral with its results as facts that ‘speak for themselves’.   But the results of observation and data analysis always require interpretation. Furthermore, our target audience are researchers doing applied research, problem solving and research for development meaning that results have to be understood and used if they are to make a contribution.  The way they are presented or communicated makes all the difference to whether they are noticed and used by scientists, farmers or anyone else. Hence, we need to pay careful attention to how  this presentation and communication is done.
+
+Careful and complete documentation of what you did and what you observed is **reporting**. It is sometimes necessary, for example to ensure there is a permanent record of the work or to show that research funding has been spent as intended.  However, reporting is not the same as presenting results to get a message across to someone, and that is what we are looking at in this series. 
+
+If research results are to be communicated effectively then the approach has to be based on the way people think, are influenced and learn. That is why concepts of storytelling are important  in communicating research results. The table below lists some of the characteristics of research results and of storytelling.
+
+Research results should be         Compelling stories
+--------------------------         -------------------------
+Rigorous                           Capture attention
+Dependable                         Bring new perspectives
+Clear                              Open minds
+Complete                           Reveal truths
+Impactful                          Connect to the lived experience
+
+The aim in presenting research results is to bring these two sets of characteristics together. In this chapter we look at what makes good stories and where they come from. Other chapters then cover methods and techniques for presenting the story.
+
+The notion that scientific communication should use storytelling skills and approaches is sometimes controversial, with some scientists thinking it suggests we should be manipulative, perhaps hide some of the facts or lead people to thinking  we know something that is still uncertain. Those are certainly problems to guard against. Suggesting we use story telling approaches is not a suggestion to present myths and anecdotes as scientific knowledge or to be scientifically unethical. But the possibility of misusing the approach does not mean it should not be used. See resources below for references.
+
+## Good research stories
+
+There are several ways of describing what makes a good research story. See the resources below for more suggestions. I find the three most important items to be:
+
+1. The message - What you want people to remember and act on. 
+
+2. The argument - The steps from what is known and accepted, including current scientific theory, to what is new. 
+
+3. The evidence - The data, observations and results that support the argument. 
+
+Important characteristics of these are in the video and other resources listed. Getting these right is the starting point for preparing to present research results in any format. There is usually no point in working on other aspects of the presentation, whether in a paper, video, poster or talk, until you have these three things clear.
+
+There are three further aspects that are essential for ensuring the scientific credibility of the story:
+
+4. Honesty – Open and transparent description of what you did and found. 
+
+5. Uncertainty – Describing what is unknown and levels of uncertainty as well as what is now known. 
+
+6. Alternative explanations – There are always multiple interpretations of new observations and you need to explain why you select one and dismiss others. 
+
+## Source of stories
+
+Where can you find the story that you want to tell about your results? The story might well be obvious to you after working on the topic and being immersed in it for a long time. If not, where can you look? There are no hard rules but two possible routes to finding a good story are described here.
+
+### Progress in science
+
+The scientific progress made with your results could be the message in your story. Scientific understanding of the way nature (including people) works comes through cycles of making observations and collecting data, reflecting on what they mean, formulating theory and testing the theory with further observations. Thus in any area of knowledge there are two states:
+
+
+-----------------------   ----------------------------------------
+![](img/Green dot.png)    We understand observations and they match expectations. All credible data match theory.
+![](img/Red dot.png)      We observe something that is unexplained and unexpected. At least some credible data doesn’t match the dominant theory.
+-----------------------   ----------------------------------------
+
+The start of your research can be described by the red or green state, and now you are presenting results you are in a red or green state. The story comes from the before and after states, as in the following table:
+
+Case    Before                 Now                    Message
+----    ------                 ------                 ------------------------------------- 
+1       ![](img/Green dot.png) ![](img/Green dot.png) We thought we understood and that is confirmed  
+2       ![](img/Red dot.png)   ![](img/Red dot.png)   We did not understand and still don’t
+3       ![](img/Green dot.png) ![](img/Red dot.png)   We thought we understood but have seen something new which upsets current theory
+4       ![](img/Red dot.png)   ![](img/Green dot.png) We did not understand but now do.
+
+(Meine van Noordwijk, personal communication) 
+
+Case 1 is hard to make into a compelling story. You might find something in the novelty of the place or context in which you did the research.
+
+Case 2 can also be hard because you have to convince your audience that you investigated carefully, as it is easy to fail to understand by doing poor research.
+
+Case 3 could be important if it leads to new areas of research.
+
+Case 4 is perhaps what scientists hope will happen, with mysteries solved and new theory developed.
+
+### Progress with action and theories of change
+
+Much research for development is done as part of projects that are described with a Theory of Change (ToC).   The ToC describes the actions the project will take and the changes expected as a result of the actions – see the resource list. Your research results may provide evidence about these actions and changes, such as what is effective for whom or some additional unexpected changes. For example, your ToC might include an activity of training farmers and the changes you expect that to bring about. If your results concern what actually happened when you ran the training then the story might be based on what you have learnt –such as when training is and is not effective or who is able to benefit from it. These results would then form a story about development processes. 
+
+## Presenting the story
+
+Once you have the results story formulated you are ready to present it in the format needed. Other topics in this series describe that. But whether you are writing a paper, making an aural presentation or a poster, there is little point starting on that before you have the core elements of the story assembled.
+
+## Resources
+
+This is a small selection of the resources available on the internet on the subject of presenting research results as storytelling.
+
+* A very insightful and informed video masterclass on Story Telling for Scientists. [Video](https://www.youtube.com/watch?v=6aVgf3T6p_8)
+
+* A paper on the storytelling and communicating science to non-experts: Dahlstrom (2014). [Paper](https://doi.org/10.1073/pnas.1320645111)
+
+* A whole special issue of the Journal of Science Communication on the topic:  [Special Issue](https://jcom.sissa.it/archive/18/05.)
+
+* The Editorial of that special issue is a nice summary with links to all the other papers: [Editorial](https://doi.org/10.22323/2.18050501)
+
+* Should scientists tell stories? Here is a short editorial on controversies around story telling in science from the top journal series Nature: [Editorial](https://doi.org/10.1038/nmeth.2726)
+
+* A blog on the topic from someone who claims to be an amateur but has interesting ideas to share: [Blog](https://sokolj.com/Communicating-Data-Stories/)
+
+* A simple explanation of keys points in telling stories with data: [Article](https://www.dataversity.net/telling-stories-data-five-strategies-presenting-effective-data/#)
+
+* This is a guide to finding the story in your results that is published by a university and should be particularly relevant to students. [Guide](https://www.monash.edu/rlo/graduate-research-writing/write-the-thesis/writing-the-thesis-chapters/reporting-and-discussing-your-findings#present-your-findings)
+
+* A paper describing some aspects of Theories of Change (ToC), because the ToC for your project might frame a good story: [Paper](https://evaluationcanada.ca/system/files/cjpe-entries/30-2-119_0.pdf )
+
+ 
+

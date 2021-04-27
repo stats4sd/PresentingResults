@@ -5,8 +5,8 @@
 
 ## Video
 
-```{r,echo=FALSE,out.width="100%"}
-knitr::include_url("https://www.youtube.com/embed/QsyhGoaLDnA")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/v6H2jlgGoGM"}
+knitr::include_url("https://www.youtube.com/embed/v6H2jlgGoGM")
 
 ```
 

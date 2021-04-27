@@ -42,15 +42,29 @@ Variability refers to the underlying variability in the sample, and in the popul
 
 ### Confidence intervals vs. standard errors
 
+When displaying precision around estimates there are two commonly used measurements - confidence intervals and standard errors. Both of these are useful, and they are highly related to one another, but it is extremely important to label your presentation so it is clear exactly what measure of precision is being shown. Different software packages make different choices about exactly how to display!
+
+The standard error can be considered as "the standard deviation *of the estimate*". This is a function of the standard deviation *in the data* and the sample size. As our sample size increases the standard error of the estimates decreases. The ratio of the estimate to the standard error is what helps us determine statistical significance in hypothesis testing, although it can be tricky to intepret standard errors as numbers on their own.
+
+This is why using confidence intervals are general preferred - these provide the range of values where we think the "true" value of the estimate would lie. In general it is conventional to present results using a 95% confidence interval, this has the nice statistical property of usually being equal the mean +- two times the standard error. As we increase the level of confidence of our interval, to 99% or 99.9%, then width of the confidence interval will increase - to be more confident that we have captured the true value in our interval we need to allow for more possible options.
+
 ### In tables
 
 ### Around trends
 
+When showing the confidence interval of a trend, visually this is better represented by showing a shaded region around the trend line, rather than through use of multiple error bars, which would be misleading or messy, or through use of seperate lines, which are harder to interpret and less visually intuitive.
+
+
 ### Overload of error bars?
+
+When presenting plots with lots of error bars this can quickly start to look messy and hard to interpret. In cases with lots of treatments, e.g. a varietal screening trial with 100+ different treatments each with 4 replications, presenting a single measure of precision - a pooled estimate from a statistical model - may be beneficial as it will allow focus to be placed onto the results, whilst still maintaining a display of the precision.
+
 
 ## Variability
 
 ### Plots which can display variability
+
+There are lots of different plots available which can show variability and compare variability across groups. Error bars should never be used as a way of showing variability. Not only do they not provide a strong visual summary of variability the conventional use of error bars is to represent precision, so it is extremely likely your plot will be mis-interpreted by some or all of your audience.
 
 #### Boxplots/Violin Plots
 

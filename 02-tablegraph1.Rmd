@@ -4,7 +4,9 @@
 
 ## Video Under Construction
 
-```{r,echo=FALSE,out.width="100%"}
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/kplqTqLdR6o"}
+
+knitr::include_url("https://www.youtube.com/embed/kplqTqLdR6o")
 
 ```
 

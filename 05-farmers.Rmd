@@ -1,7 +1,0 @@
-# Presenting results as tables and graphs  4 for farmers {#farmers}
-
-## SECTION UNDER CONSTRUCTION
-
-```{r,echo=FALSE,out.width="100%"}
-knitr::include_url("https://www.youtube.com/embed/G7qcTJauvdY")
-```
