@@ -1,6 +1,8 @@
 # Precision and variability {#precision}
 
-```{r,echo=FALSE,message=FALSE}
+*Sam Dumble*
+
+```{r,echo=FALSE,message=FALSE, warning = FALSE,include=FALSE}
 library(tidyverse)
 library(knitr)
 
@@ -17,16 +19,15 @@ for(i in 10:1000){
 
 ```
 
-## SECTION UNDER CONSTRUCTION
 
 ## Introduction
 
-When presenting results it can be tempting to focus solely on the main patterns and trends we can identify through our analysis. But we always have to bear in mind the levels of uncertainty we have in those trends, and the underlying variability that will exist around those trends. So it is important to consider how we could incorporate these ideas of precision and variability into the way we present our results to assist our audience by providing as much relevant context to the results as we can.
+When presenting results it can be tempting to focus solely on the main patterns and trends we can identify through our analysis. But we always have to bear in mind both the levels of uncertainty we have in those trends, and the underlying variability that will exist away from those trends. Incorporating these ideas of precision and variability into the way we present our results, helps to prevent our results being taken out of context or over-interpreted.
 
 ## Video
 
-```{r,echo=FALSE,out.width="100%"}
-
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/l-KPt6b20SQ"}
+knitr::include_url("https://www.youtube.com/embed/l-KPt6b20SQ")
 ```
 
 ## Precision vs Variability
@@ -48,11 +49,19 @@ The standard error can be considered as "the standard deviation *of the estimate
 
 This is why using confidence intervals are general preferred - these provide the range of values where we think the "true" value of the estimate would lie. In general it is conventional to present results using a 95% confidence interval, this has the nice statistical property of usually being equal the mean +- two times the standard error. As we increase the level of confidence of our interval, to 99% or 99.9%, then width of the confidence interval will increase - to be more confident that we have captured the true value in our interval we need to allow for more possible options.
 
+### Interactive Demo of Precision vs. Variability
+
+```{r,echo=FALSE,out.width="100%",fig.cap="https://shiny.stats4sd.org/PresentingResults-Precison/"}
+knitr::include_url("https://shiny.stats4sd.org/PresentingResults-Precison/",height="1000px")
+```
+
+
+
 ### In tables
 
 ### Around trends
 
-When showing the confidence interval of a trend, visually this is better represented by showing a shaded region around the trend line, rather than through use of multiple error bars, which would be misleading or messy, or through use of seperate lines, which are harder to interpret and less visually intuitive.
+When showing the confidence interval of a trend, visually this is better represented by showing a shaded region around the trend line, rather than through use of multiple error bars, which would be misleading or messy, or through use of separate lines, which are harder to interpret and less visually intuitive.
 
 
 ### Overload of error bars?
@@ -64,14 +73,149 @@ When presenting plots with lots of error bars this can quickly start to look mes
 
 ### Plots which can display variability
 
-There are lots of different plots available which can show variability and compare variability across groups. Error bars should never be used as a way of showing variability. Not only do they not provide a strong visual summary of variability the conventional use of error bars is to represent precision, so it is extremely likely your plot will be mis-interpreted by some or all of your audience.
+There are lots of different plots available which can show variability and compare variability across groups. Error bars should never be used as a way of showing variability. Not only do they not provide a strong visual summary of variability the conventional use of error bars is to represent precision, so it is extremely likely your plot will be misinterpreted by some or all of your audience. (ref: https://journals.lww.com/jpancreatology/Fulltext/2019/09000/A_note_on_error_bars_as_a_graphical_representation.2.aspx)
 
-#### Boxplots/Violin Plots
+Many of the commonly chosen plot types, such as bar charts or line graphs, do not allow for the assessment of variability. This is a problem when the audience wants to understand more about the data itself, and how strong these trends are in relation to the overall variability. Ref: (https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128) 
+
+```{r,echo=FALSE, warning=FALSE}
+
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+ggplot(aes(y=wealth,x=Education,fill=Education))+
+  stat_summary(geom="bar",fun.y="mean",col="black",show.legend=FALSE)+
+  ylab("Mean Wealth Score")+
+  ggtitle("Barchart Comparing Average Wealth Scores by Education",subtitle="No Variability")+
+  scale_fill_brewer(palette="Pastel2")
+```
+
+Different options could include 
+
+#### Boxplots
+
+```{r,echo=FALSE}
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+ggplot(aes(y=wealth,x=Education,fill=Education))+
+  geom_boxplot(show.legend=FALSE)+
+  ylab("Wealth Score")+
+  ggtitle("Boxplot Comparing Average Wealth Scores by Education",subtitle="Structured Variability")+
+  scale_fill_brewer(palette="Pastel2")
+```
+
+Boxplots provide a very structured view of variability, by illustrating the interquartile range, the minimum and maximum value as well as any outliers. This structured nature makes them easy to make comparisons across groups -in the example above we can see clearly the variability in wealth, as represented by th size of the boxes, is very similar for all education levels. Boxplots also can clearly show trends - again we can clearly see the median wealth, the middle of the box, increasing as education increases. This ease of interpretation makes them a very popular choice for displaying data.
+
 
 #### Histograms
 
+```{r,echo=FALSE,fig.width=6,fig.height=8}
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+ggplot(aes(x=wealth,fill=Education))+
+  geom_histogram(bins=15,show.legend=FALSE,col="black")+
+  facet_wrap(~Education,ncol=1)+
+  xlab("Wealth Score")+
+  ggtitle("Histograms Comparing Average Wealth Scores by Education",subtitle="Grouped Variability")+
+  scale_fill_brewer(palette="Pastel2")
+```
+
+Histograms show us the shape of the distribution, by grouping together similar values into bars. One aspect of this distribution is the variability, although we cannot infer comparisons of variability from histograms quite as easily as we can with boxplots. However histograms are especially useful if we have non-unimodal distributions. We can see this for the "complete primary" group in the plot above, which seems to have two distinct peaks of the wealth score. Because of the structured way boxplots summarise variability, this is notsomething we could detect from a boxplot. A note of caution - the bin size of histograms is an abritrary and subjective decision. Changing how wide each bar is can often change the shape of the distribution substantially.
+
+### Density plots/ Violin Plots
+
+```{r,echo=FALSE,fig.width=6,fig.height=8}
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+ggplot(aes(x=wealth,fill=Education))+
+  geom_density(outline.type = "full",show.legend=FALSE)+
+  facet_wrap(~Education,ncol=1)+
+  xlab("Wealth Score")+
+  ggtitle("Density Plots Comparing Wealth Scores by Education",subtitle="Smoothed Variability")+
+  scale_fill_brewer(palette="Pastel2")
+```
+
+Density plots are very similar to histograms, except instead of grouping the data into bars a smoothing algorithm is used to show the approximate distribution as a continuous function. These have many of the same pros and cons as histograms, but unlike histograms they are not reliant on setting bin size but they are very volatile to changes when sample sizes are small. 
+
+```{r,echo=FALSE}
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+ggplot(aes(y=wealth,x=Education,fill=Education))+
+  geom_violin(col="black",show.legend=FALSE)+
+  ylab("Wealth Score")+
+  ggtitle("Violin Plots Comparing Wealth Scores by Education",subtitle="Smoothed Variability")+
+  scale_fill_brewer(palette="Pastel2")
+```
+
+Violin plots take the density plots, rotate them 90 degrees and then mirror them. These are designed to make density plots easier to compare across multiple groups.
+
 #### Cumulative Frequency Plots
+
+```{r,echo=FALSE}
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+  group_by(Education) %>%
+  arrange(wealth) %>%
+  mutate(row=1:n(),pos=row/n()) %>%
+ggplot(aes(x=wealth,y=pos,col=Education))+
+  geom_hline(yintercept = c(0,0.5,1),col="black",lty=2,alpha=0.7)+
+  geom_line(show.legend=TRUE)+
+  xlab("Wealth Score")+
+  ggtitle("Cumulative Frequency Plots Comparing Wealth Scores by Education",subtitle="Comparative Variability")+
+  scale_colour_brewer(palette="Dark2")+
+  ylab("Percentile")+
+  scale_y_continuous(labels=scales::percent,breaks=seq(0,1,by=0.2))
+```
+
+Cumulative frequency plots are a good way of comparing results across groups for the full range of values, they can show whether differences in groups are consistent across the range of values or whether differences between groups are being driven solely by differences at the extremes, or middle. Summary statistics like the median and interquartile range can also be directly inferred from these type of plots.
 
 #### Scatter plots
 
+```{r,echo=FALSE}
+fs %>%
+  mutate(Education=factor(recode(hheducation, "none"="None","primary1"="Some Primary","primary2"="Complete Primary","secondary"="Secondary or Higher"),
+                          levels=c("None","Some Primary","Complete Primary","Secondary or Higher"))) %>%
+  filter(hheducation!="other") %>%
+ggplot(aes(y=wealth,x=Education,fill=Education))+
+  geom_jitter(col="black",show.legend=FALSE,shape=21,width=0.05,height=0.05)+
+  ylab("Wealth Score")+
+  ggtitle("Scatter Plots Comparing Wealth Scores by Education",subtitle="Raw Variability")+
+  scale_fill_brewer(palette="Pastel2")
+```
+Scatter plots are often the best way of showing variability when the data is fairly small in size, with a small number of points scatter plots make it easy to infer patterns, trends and variability. But this quickly gets more difficult as the size of the dataset increases. For example in the plot above, even with a jittered scatterplot, it is very difficult to see any differences in wealth by education because there is so much data.
+
+In some cases scatter plots can be very useful for showing aspects of variability which can easily be missed by conventional statistical summaries - for example in the classic 'anscombe' quartet, where all four of these plots have the same linear relationship and the same variance. But the nature of their relationship, and how the variability is structured across the range are very different.
+
+```{r,echo=FALSE,message=FALSE}
+data("anscombe")
+
+with(anscombe,data.frame(x=c(x1,x2,x3,x4),y=c(y1,y2,y3,y4),plot=rep(c("Example 1","Example 2","Example 3","Example 4"),each=11))) %>%
+  ggplot(aes(x=x,y=y))+
+  geom_smooth(method="lm",se=F)+
+  geom_point()+
+  facet_wrap(~plot)
+```
+
+
 ### In tables. Is standard deviation always the answer?
+
+In journal articles it would be expected to use the standard deviation to summarise variability.
+However, as illustrated in the plots above, this value does not tell the whole picture about variability - in isolation it is only really useful if our data perfectly follows a known statistical distribution, and this is rarely the case. Plots are a much better way of illustrating variability in data!
+
+But where presenting summary statistics, particularly to non technical audiences, standard deviations are often even less useful as they are not commonly well understood in their own right. On the other hand percentiles can be quite well understood by many people - so consider using the lower and upper quartiles as a way of summarising variability, although framed as the "25th percentile" and "75th percentile", so they may be better understood. Equally it can be useful to talk about the "5th" and "95th" percentiles as well. The minimum and maximum values, although almost universally understood, are actually quite poor summaries of overall variability. These values are solely dependent on one individually high and one individually low value, and unless you have taken a census of all possible values, then they do not provide much information about variability. If you were to re-do the data collection procedure again you would likely obtain very different results. Hence why considering the 5th or 95th percentiles may provide a better, more generalisable summary of your results
+
+## References
+
+https://www.nature.com/articles/nmeth.2659
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2064100/
+

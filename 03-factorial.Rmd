@@ -1,12 +1,12 @@
 # Presenting results across multiple factors {#factor}
 
+*Sam Dumble*
+
 ```{r,echo=FALSE,message=FALSE,warning=FALSE}
 library(tidyverse)
 library(knitr)
 library(Hmisc)
 ```
-
-## DRAFT
 
 ## Introduction
 
@@ -18,8 +18,8 @@ In some cases, particularly considering a classic factorial experiment, the desi
 
 ## Video 
 
-```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/0k-xc6YOtWc"}
-knitr::include_url("https://www.youtube.com/embed/0k-xc6YOtWc")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/_jJa6fx57zc"}
+knitr::include_url("https://www.youtube.com/embed/_jJa6fx57zc")
 ```
 
 
@@ -177,7 +177,7 @@ ggplot(aes(y=Yield,x=Inputs),data=subset(dt1,Site=="Y"&Type=="A")) +
 
 
 
-## Shiny
+## Interactive Demo
 
 ```{r,echo=FALSE,out.width="100%",fig.cap="https://shiny.stats4sd.org/factorial-experiments-2"}
 knitr::include_url("https://shiny.stats4sd.org/factorial-experiments-2",height="1000px")

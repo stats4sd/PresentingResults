@@ -45,8 +45,8 @@ If you think of a typical paper you probably think of the standard structure wit
 
 ## The writing process - Video
 
-```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/V-o9QbJQzTQ"}
-knitr::include_url("https://www.youtube.com/embed/V-o9QbJQzTQ")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/sUqJ9MQXN04"}
+knitr::include_url("https://www.youtube.com/embed/sUqJ9MQXN04")
 ```
 
 The video accompanying this chapter mainly focuses on the process of writing a paper as that is less commonly described in other resources. Everyone will develop their own approach to writing but when you are faced with the task for the first time it can be daunting.    

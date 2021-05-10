@@ -12,3 +12,132 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+/* General formatting */
+
+body,.book,.book-summary {
+  font-family: Open Sans, arial !important; 
+}
+
+  /* Headings */
+h1,h2 {
+  color: #000;
+  line-height: 1.3;
+}
+
+  .level1 h1::after {
+    content:" ";
+    display: block;
+    width: 45px;
+    height: 8px;
+    margin-top: 1rem;
+    margin-left: 0.4rem; 
+    background-color: #d32229;
+
+  }
+
+  .level2 h2 {
+    font-size: 2.6rem !important;
+    font-weight: 600;
+    
+  }
+.page-inner a {
+  font-weight: 600;
+  color: #d32229 !important;
+}
+.page-inner {
+  width: 100%;
+  max-width: 900px;
+}
+
+
+/* sidebar */
+li.chapter {
+  font-weight: 500;
+}
+ul.summary li a:hover, .book .book-summary ul.summary li.active > a {
+  color: #d32229 !important;
+}
+
+.summary .divider {
+  display: none;
+}
+
+nav>ul.summary:first-child>li:first-child {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Intro cover */
+
+#header {
+  display: none;
+}
+
+#banner {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
+}
+
+#banner h1 {
+  width: 100%;
+  display: block;
+  font-size: 4.5rem ;
+  line-height: 5.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  color: #000;
+}
+
+
+#banner .subtitle {
+
+font-size: 2rem;
+font-style: italic;
+color: #000;
+line-height: 1.3;
+font-weight: 400;
+}
+
+.alignRow {
+padding-bottom: 2rem;
+text-align: center;
+}
+
+.imageColumn {
+  display: inline-block;
+  width: 25%;
+  padding: 10px;
+}
+
+.headerimg {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#details {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: rgba(0,0,0,.17) 1px;
+  border-bottom-style: solid;
+}
+
+
+#details p {
+  font-weight: 200;
+}
+  
+
+

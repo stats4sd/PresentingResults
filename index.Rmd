@@ -1,9 +1,17 @@
 --- 
-title: "Resources on Presenting Results"
+title: "Presenting Research Results"
 author: "RMS"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
+header-includes: 
+- \usepackage{titling}
+- \usepackage{pdfpages}
+- \pretitle{\begin{center}\includepdf{img/pdfcover.pdf}}
+- \posttitle{\end{center}}
+- \usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+- \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+classoption: titlepage
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -11,12 +19,20 @@ link-citations: yes
 github-repo: stats4sd/PresentingResults
 description: "This is a document compiling various resources on how to present results from different types of data, for different audiences and different purposes"
 always_allow_html: true
-
 ---
 
-# Introduction
 
-This page is an introduction. I will write some text later
+
+# Presenting Research Results
+```{r, echo=FALSE}
+htmltools::includeHTML("banner.html")
+```
+
+## Introduction
+
+The process of research is a time consuming one, taking hours, days, months and indeed years of careful consideration and study into understanding your objectives better. However perhaps the most important stage of the whole process is the final one - sharing your results with the rest of the world. Without doing this process well, the key things that you have learned along the way will be trapped solely inside your own brain, and may never be translated into real-world impacts. 
+
+This guide provides a series of chapters, originally created for a workshop of students funded by the McKnight Collaborative Crop Research Programme (CCRP), providing some guidance, suggestions, ideas and examples of how research results can be presented to maximise their potential impact. This covers chapters concerning how to adapt to visually present quantitative results, tailor towards different audience types, adapt to different modes of presentation and for key components of different research designs and data types. The primary focus of these resources is on results from agricultural research, given the nature of the students involved in the original workshop, but we think these guides will serve as a useful resource regardless of your own scientific discipline.
 
 ## Contents
 
@@ -30,7 +46,7 @@ Overview of general issues to consider for visual presentation of results
 How to deal with multiple factors, and interactions
 
 [Presenting results as tables and graphs  3 Precision](#precision)
-Capturin precision and variability in presentations to complement the key trends
+Capturing precision and variability in presentations to complement the key trends
 
 [Presenting in papers](#papers)
 Guidance for reporting for journals and papers

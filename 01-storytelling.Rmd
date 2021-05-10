@@ -17,8 +17,8 @@ Effective presentation of research results starts with identification of the sto
 
 ## Video
 
-```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/V-o9QbJQzTQ"}
-knitr::include_url("https://www.youtube.com/embed/V-o9QbJQzTQ")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/PyKPpgPuA9E"}
+knitr::include_url("https://www.youtube.com/embed/PyKPpgPuA9E")
 ```
 
 ## Scientific results and story telling
@@ -71,8 +71,8 @@ The scientific progress made with your results could be the message in your stor
 
 
 -----------------------   ----------------------------------------
-![](img/Green dot.png)    We understand observations and they match expectations. All credible data match theory.
-![](img/Red dot.png)      We observe something that is unexplained and unexpected. At least some credible data doesn’t match the dominant theory.
+![](img/Green dot.png)    `r strwrap("We understand observations and they match expectations. All credible data match theory.", 40)`
+![](img/Red dot.png)      `r strwrap("We observe something that is unexplained and unexpected. At least some credible data doesn’t match the dominant theory.", 40)`
 -----------------------   ----------------------------------------
 
 The start of your research can be described by the red or green state, and now you are presenting results you are in a red or green state. The story comes from the before and after states, as in the following table:
@@ -81,7 +81,7 @@ Case    Before                 Now                    Message
 ----    ------                 ------                 ------------------------------------- 
 1       ![](img/Green dot.png) ![](img/Green dot.png) We thought we understood and that is confirmed  
 2       ![](img/Red dot.png)   ![](img/Red dot.png)   We did not understand and still don’t
-3       ![](img/Green dot.png) ![](img/Red dot.png)   We thought we understood but have seen something new which upsets current theory
+3       ![](img/Green dot.png) ![](img/Red dot.png)   `r strwrap("We thought we understood but have seen something new which upsets current theory", 30)`
 4       ![](img/Red dot.png)   ![](img/Green dot.png) We did not understand but now do.
 
 (Meine van Noordwijk, personal communication) 

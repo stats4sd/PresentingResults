@@ -1,10 +1,11 @@
 # Adapting to the audience {#audience1}
 
+*Nicolas Greliche*
 
 ## Video
 
-```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/wO5NCcUoDi4"}
-knitr::include_url("https://www.youtube.com/embed/wO5NCcUoDi4")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://youtu.be/7a7x67XAu_I"}
+knitr::include_url("https://www.youtube.com/embed/7a7x67XAu_I")
 ```
 
 ## Without a conscious effort, a presentation is unlikely to be well adapted to its audience
@@ -106,75 +107,37 @@ There are also arguments for doing things differently than suggested here. Let's
 
 Planning well and thinking about all of points and suggestions we've discussed is time consuming. Yes. That's true. It is definitely time consuming. So there is a Balance to find. But keep in mind that if the audience doesn’t understand your presentation, your presentation becomes pointless!
 
-#### The ppt presentation as standalone material
+#### The ppt presentation should sometime work as standalone material
 
--	There is an argument for having lots of text and information in the slides rather than keeping these to a minimum to not distract the audience from what you’re saying. This argument is that sometimes, PowerPoint presentations are also intended to become standalone material. In such situation, one might think that all the information that would be given by the presenter should be in the slides. Well maybe, but there are good alternatives to that. First, as said earlier, you can actually place your full script in the note section, which is part of your PowerPoint file, so if you share your slides, you also share your script. You can also maybe make a separate version of the slides that is specifically for sharing. And finally what about sharing a recording of the presentation?
-
-
+There is an argument for having lots of text and information in the slides rather than keeping these to a minimum to not distract the audience from what you’re saying. This argument is that sometimes, PowerPoint presentations are also intended to become standalone material. In such situation, one might think that all the information that would be given by the presenter should be in the slides. Well maybe, but there are good alternatives to that. First, as said earlier, you can actually place your full script in the note section, which is part of your PowerPoint file, so if you share your slides, you also share your script. You can also maybe make a separate version of the slides that is specifically for sharing. And finally what about sharing a recording of the presentation?
 
 
-## Special case of a presentation of results shown to farmers
 
-```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/4n8kITEY8wQ"}
-knitr::include_url("https://www.youtube.com/embed/4n8kITEY8wQ")
+
+## Special case of a presentation of results shown to farmers - Video
+
+```{r,echo=FALSE,out.width="100%",fig.cap="https://youtu.be/slM6ZjeukE4"}
+knitr::include_url("https://www.youtube.com/embed/slM6ZjeukE4")
 ```
+All of the above is very relevant to the special case of presenting results to farmers, but the difference between farmers and you in terms of background, knowledge and way of reasoning is so important that we need to come back to the main points and develop them further. Because adapting to a farmer audience is not easy.
 
--	Put little text, avoid tables. Choose wording, colours and icons/images very carefully. Icons can be great, but if not chosen carefully they can quickly do more harm than good
--	You may want to keep things extra simple, but more important is making sure that what is shown is intuitive – and careful! Not easy to guess what will be intuitive to farmers – expl: though simple, barcharts might not be so intuitive
--	Provide lots of guidance (obviously), but be very receptive to farmers reactions and adapt to it – spend more time on the things they are interested in, and on the key points where you feel they struggle. Skip the things where you feel they struggle too much though.
--	Try hard that farmers feel related to what is presented:
-o	would help if they took part in experiment or similar experiment
-o	try to present things in a way that is familiar to them – explain how results have been obtained in a way that follows the usual process in a farm for example.
-o	Might be easiest to understand a graph if they can find themselves in the graph - each farmer is represented by a point or a line – and emphasize this by giving examples
-o	focus on the results that are useful for them
-o	keep in mind that sometimes it might be better letting a farmer present the results – in which case you might need to go beyond presenting and provide training to a farmer on presenting the results.
+### Difference of background/knowledge
 
+Usually, farmers don’t have any familiarity with research or statistics and they may put more trust and value into stories or anecdotes than on the abstract generalisation that researchers hope to discover. When presenting results to farmers, it is therefore important to keep this in mind and to try hard to make results very relatable. Here are some tips to help you with that:
+- Try to present things in a way that is familiar to them: explain how results have been obtained in a way that follows the usual process in a farm for example. Use examples or anecdote to help them relate to what you are talking about.  
+-	It might be easiest to understand a graph if they can find themselves on the graph, where each farmer is represented by a point or a line. Emphasize it by giving examples.  
+- Try to focus on the results that are useful for them.  
+-	Keep in mind that sometimes it might be more fruitful to let a farmer present the results. In that case, you might need to go beyond presenting and provide training on presenting the results to some of the farmers.
 
-## Other Resources
+### A different way of reasoning
 
-***General***
+What is very difficult when presenting results to a farmer audience is that it is hard to know how they will look at a slide, a picture or a graph, as well as what you should say or show to convey your message and make sure they understand why it is relevant to them. The literature remains relatively thin on the subject, and specific tips are hard to provide, but putting some extra attention to the following should help: 
+-	Put little text and avoid tables. Not all farmers know how to read, so you should really focus on visual representations.  
+-	Choose colours, icons, pictures very carefully. Icons can help, but if not chosen carefully they can actually do more harm than good.  
+-	You may want to keep things extra simple, but more important is making sure that what is shown is intuitive. Because Farmers can understand complex graphs when it is made intuitive to them. But it is not easy to guess what will be intuitive to farmers. For example, a barchart is one of the simplest type of graphs, but it is may be much less intuitive than complex graphs where the farmers can identify themselves.  
+-	Provide lots of guidance. That's obvious. But it is as important to be very receptive to farmers reactions and adapt to it. Spend more time on the things they are interested in, and on the key points where you feel they struggle. Skip the things where you feel they struggle too much though.
 
-[Our extensive guide which also covers maps]()
+### Have an open mind
 
-[GSS – Introduction to Data visualisation](https://gss.civilservice.gov.uk/policy-store/introduction-to-data-visualisation/#section-7)
-
-[Informative Presentation of Tables, Graphs and Statistics](https://stats4sd.org/resources/412)
-
-[Data visualisation examples](https://stats4sd.org/resources/59)
-
-[Tips on effective use of tables and figures in research papers](https://www.editage.com/insights/tips-on-effective-use-of-tables-and-figures-in-research-papers)
-
-[Tufte Principles](https://sites.google.com/site/tufteondesign/home/six-fundamental-principles-of-design)
-
-[Blog with accompanying free guide](https://blog.hubspot.com/marketing/great-data-visualization-examples)
-
-***Tables***
-
-[Exporting Tables from R using Flextable, Kable and gt](https://stats4sd.org/resources/506)
-
-[Preparing tables for research papers](https://www.manuscriptedit.com/scholar-hangout/preparing-tables-research-papers/)
-
-[Formatting Tables in MS word](http://www.docs.is.ed.ac.uk/skills/documents/3575/3575.pdf)
-
-***Graphs***
-
-[R Graphics Cookbook](https://r-graphics.org/)
-
-[Financial Times – Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/blob/master/visual-vocabulary/Visual-vocabulary.pdf)
-
-***Accessibility***
-
-[ONS – Web accessibility](https://style.ons.gov.uk/writing-for-the-web/web-accessibility/introduction-3/)
-
-[Tableau – Colour Blindness](https://www.tableau.com/about/blog/2016/4/examining-data-viz-rules-dont-use-red-green-together-53463)
-
-***Good Examples***
-
-[Reddit - r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)
-
-***Bad Examples***
-
-[Reddit - r/dataisugly](https://www.reddit.com/r/dataisugly/)
-
-[towardsdatascience.com article](https://towardsdatascience.com/why-is-this-chart-bad-5f16da298afa)
+And there’s one last think that is really important when presenting results to farmers. It is to keep an open mind and be ready to learn things from the farmers as much as they learn from you. Because their perspective on things is unique and if you accept to genuinely accept and listen to it, you will quickly realise how valuable and insightful it is!
 

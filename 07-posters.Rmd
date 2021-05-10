@@ -2,11 +2,10 @@
 
 *Alex Thomson*
 
-
 ## Video
 
-```{r,echo=FALSE,out.width="100%",fig.cap="https://www.youtube.com/v6H2jlgGoGM"}
-knitr::include_url("https://www.youtube.com/embed/v6H2jlgGoGM")
+```{r,echo=FALSE,out.width="100%",fig.cap="https://youtu.be/zc_GnRclgYQ"}
+knitr::include_url("https://www.youtube.com/embed/zc_GnRclgYQ")
 
 ```
 
@@ -154,7 +153,7 @@ Assumes generally you have lots and lots of interesting numbers, results and fac
 
 Can be off-putting to supply the audience with so much information at once.
 
-```{r, echo = FALSE, fig.align='center',out.height="25%", out.width="50%"}
+```{r, echo = FALSE, fig.align='center',out.height="50%", out.width="75%"}
 knitr::include_graphics("img/infographic.jpg")
 ```
 [Source of infographic: Visual.ly](https://visual.ly/community/Infographics/technology/infographics-benefits-their-use-online?utm_source=visually_embed)
@@ -312,7 +311,7 @@ A large interesting diagram draws the eye
 
 Shows that research and studies is not the only reason to make a poster as this is designed to illustrate key principles, examples and practices.
 
-```{r, echo = FALSE, fig.align='center'}
+```{r, echo = FALSE, fig.align='center',out.height="50%", out.width="75%"}
 knitr::include_graphics("img/GIS East Africa Poster.png")
 ```
 
